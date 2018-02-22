@@ -1,0 +1,35 @@
+<!-- About Section -->
+<% if @template_one.about_image.present? && @template_one.about_image_show_default == false %> 
+<section class="page-section" id="about">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded my-5" src="<%= asset_url @template_one.about_image_url(:about) %>" alt=""> 
+      </div>
+      <div class="col-lg-6 text-center my-auto">
+        <h1 id='about_title_show'><%= @template_one.about_title %></h1> 
+        <hr class="colored">
+        <p id='about_text_show'><%= @template_one.about_text %></p>
+        <p id='about_text_2_show'><%= @template_one.about_text_2 %></p> 
+      </div>
+    </div>
+  </div>
+</section>
+<% else %>
+<section class="page-section" id="about">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-lg-6">
+        <img class="img-fluid rounded my-5" src="<%= asset_url 'template_ones/creative/about.jpg'%>" alt=""> 
+      </div>
+      <div class="col-lg-6 text-center my-auto">
+        <h1 id='about_title_show'><%= @template_one.about_title %></h1> 
+        <hr class="colored">
+        <p id='about_text_show'><%= @template_one.about_text %></p>
+        <p id='about_text_2_show'><%= @template_one.about_text_2 %></p>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+

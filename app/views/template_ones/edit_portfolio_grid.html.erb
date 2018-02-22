@@ -1,0 +1,45 @@
+<%= render 'template_ones/edit_partials/portfolio_grid' %> 
+<%= render 'template_ones/partials/static_assets/static_assets' %>
+<div class='container'>
+  <%= bootstrap_flash %>  
+<br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+<br><br>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Module Text</h4>
+      <%= simple_form_for(@template_one) do |f| %>
+      <div class="form-inputs">
+        <%= f.input :portfolio_grid_hide, label: "Hide this module on main page?" %> 
+        <%= f.input :portfolio_grid_title, label: "Title" %> 
+        <%= f.input :portfolio_grid_text, label: "Text" %> 
+      </div>
+      <div class="form-actions">
+        <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+        | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+      </div>
+      <% end %>
+    </div>
+    <div class="col-sm-4">
+      <h4>Create Image Categories</h4>
+      <%= simple_form_for [@template_one, @grid_image_category] do |image_category| %>
+      <%= image_category.input :name %>
+      <%= image_category.button :submit, data: {disable_with: 'One moment please...'} %> 
+      <% end %>
+    </div>
+    <div class="col-sm-4">
+      <h4>Add Images</h4>
+      <%= simple_form_for(@grid_image) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :description %>
+      <strong>Add an image</strong>
+      <%= f.input :image, as: :file, label: false %>
+      <%= f.input :grid_image_category_id, collection: @grid_image_categories, value_method: :id, label: "Category", include_blank: false %>
+      <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+      <% end %>
+    </div>
+  </div>
+</div>
+<br><br><br><br>
+

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tab name:</strong>
+  <%= @app_setting.tab_name %>
+</p>
+
+<p>
+  <strong>Theme name:</strong>
+  <%= @app_setting.theme_name %>
+</p>
+
+<%= link_to 'Edit', edit_app_setting_path(@app_setting) %> |
+<%= link_to 'Back', app_settings_path %>

@@ -1,0 +1,28 @@
+<%= render 'template_ones/edit_partials/about' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :about_hide, label: "Hide this module on main page?" %> 
+    <%= f.input :about_title %>
+    <%= f.input :about_text %> 
+    <%= f.input :about_text_2 %> 
+    <%= f.input :about_image_show_default, label: "Show default images?" %>
+    <label>Add custom image (600 X 400)</label>
+    <%= f.input :about_image, as: :file, label: false %> 
+  </div>
+  <div class='container'>
+    <label>Image Preview</label><br>
+    <%= image_tag @template_one.about_image_url(:small) if @template_one.about_image.present? %> 
+  </div>
+  <br>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+

@@ -1,0 +1,125 @@
+<%= render 'template_ones/edit_partials/footer' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+<br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+<br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <%= f.input :footer_hide, label: "Hide this module on main page?" %>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Telephone</h5>
+      <%= f.input :footer_hide_telephone, label: "Hide Telephone info?" %>
+      <span id='hide_telephone_input'>
+        <label>Telephone Icon</label>
+        <i id='footer_icon_telephone_input' class="fa fa-<%= @template_one.footer_icon_telephone %> fa-fw fa-2x"></i>
+        <%= f.input :footer_icon_telephone, collection: TemplateOne::FA_ICONS, include_blank: false, label: false %>
+        <%= f.input :footer_telephone_title %>
+        <%= f.input :footer_telephone_number %>
+        <h6>Background Image</h6>
+        <%= f.input :footer_use_default_image, label: "Use the footer default image?" %>
+        <h6>Add a Custom Image(1500 X 798)</h6>
+        <%= f.input :footer_image %>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <h5>Address</h5>
+      <%= f.input :footer_hide_address, label: "Hide Address info?" %>
+      <span id='hide_address_input'>
+      <label>Address Icon</label>
+      <i id='footer_icon_address_input' class="fa fa-<%= @template_one.footer_icon_address %> fa-fw fa-2x"></i>
+      <%= f.input :footer_icon_address, collection: TemplateOne::FA_ICONS, include_blank: false, label: false %>
+      <%= f.input :footer_address_title %>
+      <%= f.input :footer_address_street %>
+      <%= f.input :footer_address_city %>
+      <%= f.input :footer_address_state %>
+      <%= f.input :footer_address_postal_code %>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <h5>Email</h5>
+      <%= f.input :footer_hide_email, label: "Hide Email info?" %>
+      <span id='hide_email_input'>
+      <label>Email Icon</label>
+      <i id='footer_icon_email_input' class="fa fa-<%= @template_one.footer_icon_email %> fa-fw fa-2x"></i>
+      <%= f.input :footer_icon_email, collection: TemplateOne::FA_ICONS, include_blank: false, label: false %>
+      <%= f.input :footer_email_title %>
+      <%= f.input :footer_email_address %>
+      </span>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Socal Link 1</h5>
+      <%= f.input :footer_hide_social_1, label: "Hide this from the view?" %> 
+      <span id='hide_social_1_input'>
+      <label>Social Link 1 Icon</label>
+      <i id='footer_social_icon_1_input' class="fa fa-<%= @template_one.footer_social_icon_1 %> fa-fw fa-2x"></i>
+      <%= f.input :footer_social_icon_1, collection: TemplateOne::FA_BRAND_ICONS, include_blank: false, label: false %>
+      <%= f.input :footer_social_url_1, label: "Set link: 'example.com'" %>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <h5>Socal Link 2</h5>
+      <%= f.input :footer_hide_social_2, label: "Hide this from the view?" %>
+      <span id='hide_social_2_input'>
+      <label>Social Link 2 Icon</label>
+      <i id='footer_social_icon_2_input' class="fa fa-<%= @template_one.footer_social_icon_2 %> fa-fw fa-2x"></i>
+      <%= f.input :footer_social_icon_2, collection: TemplateOne::FA_BRAND_ICONS, include_blank: false, label: false %>
+      <%= f.input :footer_social_url_2, label: "Set link: 'example.com'" %>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <h5>Socal Link 3</h5>
+      <%= f.input :footer_hide_social_3, label: "Hide this from the view?" %>
+      <span id='hide_social_3_input'>
+      <label>Social Link 3 Icon</label>
+      <i id='footer_social_icon_3_input' class="fa fa-<%= @template_one.footer_social_icon_3 %> fa-fw fa-2x"></i>
+      <%= f.input :footer_social_icon_3, collection: TemplateOne::FA_BRAND_ICONS, include_blank: false, label: false %>
+      <%= f.input :footer_social_url_3, label: "Set link: 'example.com'" %>
+      </span>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Socal Link 4</h5>
+      <%= f.input :footer_hide_social_4, label: "Hide this from the view?" %>
+      <span id='hide_social_4_input'>
+      <label>Social Link 4 Icon</label>
+      <i id='footer_social_icon_4_input' class="fa fa-<%= @template_one.footer_social_icon_4 %> fa-fw fa-2x"></i>
+      <%= f.input :footer_social_icon_4, collection: TemplateOne::FA_BRAND_ICONS, include_blank: false, label: false %>
+      <%= f.input :footer_social_url_4, label: "Set link: 'example.com'" %>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <h5>Socal Link 5</h5>
+      <%= f.input :footer_hide_social_5, label: "Hide this from the view?" %>
+      <span id='hide_social_5_input'>
+      <label>Social Link 5 Icon</label>
+      <i id='footer_social_icon_5_input' class="fa fa-<%= @template_one.footer_social_icon_5 %> fa-fw fa-2x"></i>
+      <%= f.input :footer_social_icon_5, collection: TemplateOne::FA_BRAND_ICONS, include_blank: false, label: false  %>
+      <%= f.input :footer_social_url_5, label: "Set link: 'example.com'" %>
+      </span>
+    </div>
+    <div class="col-sm-4">
+      <h5>Socal Link 6</h5>
+      <%= f.input :footer_hide_social_6, label: "Hide this from the view?" %>
+      <span id='hide_social_6_input'>
+      <label>Social Link 6 Icon</label>
+      <i id='footer_social_icon_6_input' class="fa fa-<%= @template_one.footer_social_icon_6 %> fa-fw fa-2x"></i>
+      <%= f.input :footer_social_icon_6, collection: TemplateOne::FA_BRAND_ICONS, include_blank: false, label: false  %>
+      <%= f.input :footer_social_url_6, label: "Set link: 'example.com'" %> 
+      </span>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<hr>

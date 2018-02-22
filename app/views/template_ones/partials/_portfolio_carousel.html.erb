@@ -1,0 +1,38 @@
+<% if @template_one.portfolio_carousel_hide != true %>
+<!-- Portfolio Carousel -->
+<div class="portfolio-carousel wow fadeIn owl-carousel owl-theme">
+  <!-- Portfolio Carousel Item 4 -->
+  <% @projects.each do |project| %>
+  <div class="item" style="background-image: url(<%= asset_url project.image_1_url(:image_1) if project.image_1.present? %>)">
+    <div class="container-fluid">
+      <div class="row h-100">
+        <div class="col-md-7 my-auto d-none d-sm-block">
+          <div class="device-container">
+            <div class="device-mockup macbook portrait black">
+              <div class="device">
+                <div class="screen">
+                  <img class="img-fluid" src="<%= asset_url project.image_2_url(:image_2) if project.image_2.present? %>" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 my-auto">
+          <div class="project-details">
+            <span class="project-name"><%= project.name %></span>
+            <span class="project-description"><%= project.description %></span>
+            <hr class="colored">
+            <a href="#portfolioModal1" data-toggle="modal" class="btn btn-primary"><%= project.button_text %>
+            <i class="fa fa-long-arrow-right fa-fw"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
+<% end %>
+<%= link_to "Edit Portfolio Carousel", edit_portfolio_carousel_path, class: "btn btn-outline-info btn-sm pull-right" if current_user.try(:admin?) %> 
+
+<%= link_to "Edit Portfolio Heading", edit_portfolio_carousel_heading_path, class: "btn btn-outline-info btn-sm pull-left" if current_user.try(:admin?) %> 

@@ -1,0 +1,79 @@
+<br><br>
+<h2><%= @course.name %></h2>
+<br>
+<h4>Videos</h4>
+<% if @course.id == 1 %>
+<%= render 'courses/ruby_sections/section_1' %>
+<%= render 'courses/ruby_sections/section_2' %> 
+<%= render 'courses/ruby_sections/section_3' %>
+<%= render 'courses/ruby_sections/section_4' %>
+<%= render 'courses/ruby_sections/section_5' %>
+<%= render 'courses/ruby_sections/section_6' %>
+<%= render 'courses/ruby_sections/section_7' %>
+<%= render 'courses/ruby_sections/section_8' %>
+<%= render 'courses/ruby_sections/section_9' %>
+<%= render 'courses/ruby_sections/section_10' %>
+<%= render 'courses/ruby_sections/section_11' %>
+<%= render 'courses/ruby_sections/section_12' %>
+<%= render 'courses/ruby_sections/section_13' %>
+<%= render 'courses/ruby_sections/section_14' %>
+<%= render 'courses/ruby_sections/section_15' %>
+<%= render 'courses/ruby_sections/section_16' %>
+<%= render 'courses/ruby_sections/section_17' %>
+<%= render 'courses/ruby_sections/section_18' %>
+<%= render 'courses/ruby_sections/section_19' %>
+<%= render 'courses/ruby_sections/section_20' %>
+<%= render 'courses/ruby_sections/section_21' %> 
+<% end %>
+<% if @course.id == 2 %>
+<%= render 'courses/rails_sections/section_1' %>
+<%= render 'courses/rails_sections/section_2' %> 
+<%= render 'courses/rails_sections/section_3' %>
+<%= render 'courses/rails_sections/section_4' %>
+<%= render 'courses/rails_sections/section_5' %>
+<%= render 'courses/rails_sections/section_6' %>
+<%= render 'courses/rails_sections/section_7' %>
+<%= render 'courses/rails_sections/section_8' %>
+<%= render 'courses/rails_sections/section_9' %>
+<%= render 'courses/rails_sections/section_10' %>
+<%= render 'courses/rails_sections/section_11' %>
+<%= render 'courses/rails_sections/section_12' %>
+<%= render 'courses/rails_sections/section_13' %>
+<%= render 'courses/rails_sections/section_14' %>
+<%= render 'courses/rails_sections/section_15' %>
+<%= render 'courses/rails_sections/section_16' %>
+<%= render 'courses/rails_sections/section_17' %>
+<%= render 'courses/rails_sections/section_18' %>
+<%= render 'courses/rails_sections/section_19' %>
+<%= render 'courses/rails_sections/section_20' %>
+<%= render 'courses/rails_sections/section_21' %> 
+<%= render 'courses/rails_sections/section_22' %>
+<%= render 'courses/rails_sections/section_23' %> 
+<%= render 'courses/rails_sections/section_24' %>
+<%= render 'courses/rails_sections/section_25' %>
+<%= render 'courses/rails_sections/section_26' %>
+<%= render 'courses/rails_sections/section_27' %>
+<%= render 'courses/rails_sections/section_28' %>
+<%= render 'courses/rails_sections/section_29' %>
+<%= render 'courses/rails_sections/section_30' %>
+<%= render 'courses/rails_sections/section_31' %>
+<%= render 'courses/rails_sections/section_32' %>
+<%= render 'courses/rails_sections/section_33' %>
+<%= render 'courses/rails_sections/section_34' %>
+<%= render 'courses/rails_sections/section_35' %>
+<%= render 'courses/rails_sections/section_36' %>
+<%= render 'courses/rails_sections/section_37' %>
+<%= render 'courses/rails_sections/section_38' %>
+<%= render 'courses/rails_sections/section_39' %>
+<%= render 'courses/rails_sections/section_40' %>
+<%= render 'courses/rails_sections/section_41' %>
+<%= render 'courses/rails_sections/section_42' %> 
+<% end %>
+
+<br>
+<%= link_to 'New Video', new_course_post_path(@course), class: "btn btn-outline-info" if current_user.try(:admin?) %>
+<br><br><br><br>
+<br><br><br><br>
+
+
+

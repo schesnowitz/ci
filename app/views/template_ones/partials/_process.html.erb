@@ -1,0 +1,66 @@
+<!-- Services Section -->
+<% if !@template_one.process_hide? %>
+<section class="page-section services" id="process">
+  <div class="container">
+    <div class="text-center wow fadeIn">
+      <h2><%= @template_one.main_process_title %></h2>
+      <hr class="colored">
+      <p class="mb-0"><%= @template_one.main_process_title_text %></p>
+    </div>
+    <div class="row mt-4">
+      <!-- Service Item 1 -->
+      <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+        <div class="media">
+          <div class="pull-left">
+            <i id='process_icon_1_show' class="fa fa-<%= @template_one.process_icon_1 %> rounded-circle"></i>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading"><%= @template_one.sub_title_1 %></h3>
+            <ul>
+              <li><%= @template_one.process_li_1 %></li>
+              <li><%= @template_one.process_li_2 %></li>
+              <li><%= @template_one.process_li_3 %></li>
+              <li><%= @template_one.process_li_4 %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Service Item 2 -->
+      <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
+        <div class="media">
+          <div class="pull-left">
+            <i id='process_icon_1_show' class="fa fa-<%= @template_one.process_icon_2 %> rounded-circle"></i>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading"><%= @template_one.sub_title_2 %></h3>
+            <ul>
+              <li><%= @template_one.process_li_5 %></li>
+              <li><%= @template_one.process_li_6 %></li>
+              <li><%= @template_one.process_li_7 %></li>
+              <li><%= @template_one.process_li_8 %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Service Item 3 -->
+      <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
+        <div class="media">
+          <div class="pull-left">
+            <i id='process_icon_1_show' class="fa fa-<%= @template_one.process_icon_3 %> rounded-circle"></i>
+          </div>
+          <div class="media-body">
+            <h3 class="media-heading"><%= @template_one.sub_title_3 %></h3>
+            <ul>
+              <li><%= @template_one.process_li_9 %></li>
+              <li><%= @template_one.process_li_10 %></li>
+              <li><%= @template_one.process_li_11 %></li>
+              <li><%= @template_one.process_li_12 %></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+<%= link_to "Edit Process", edit_process_path, class: "btn btn-outline-info btn-sm pull-right" if current_user.try(:admin?) %>

@@ -1,0 +1,46 @@
+<!-- Call to Action -->
+<% if @template_one.action_use_default_image == true || !@template_one.action_image_url.present?   %>
+<section class="call-to-action" style="background-image: url(<%= asset_url 'template_ones/creative/backgrounds/bg-quote.jpg'%>);">
+<% else %>
+<section class="call-to-action" style="background-image: url(<%= asset_url @template_one.action_image_url(:version_1900x1267) if @template_one.action_image_url.present? %>);">
+  <% end %>
+  <div class="container wow fadeIn">
+    <div class="row">
+      <div class="col-md-10 mx-auto">
+        <span class="quote">
+        <span id='action_text_1_show'>
+        <%= @template_one.action_text_1 %>
+        </span>  
+        <span class="text-primary">
+        <span id='action_text_2_show'>
+        <%= @template_one.action_text_2 %>
+        </span>
+        </span>
+        <span id='action_text_3_show'>
+        <%= @template_one.action_text_3 %>
+        </span>
+        <span class="text-primary">
+        <span id='action_text_4_show'>
+        <%= @template_one.action_text_4 %>
+        </span>
+        </span>
+        <span id='action_text_5_show'>
+        <%= @template_one.action_text_5 %>
+        </span>
+        <span class="text-primary">
+        <span id='action_text_6_show'>
+        <%= @template_one.action_text_6 %>
+        </span>
+        </span>
+        <span id='action_text_7_show'>
+        <%= @template_one.action_text_7 %>
+        </span>
+        </span>
+        <hr class="colored">
+        <a class="btn btn-primary js-scroll-trigger" href="#process">
+        <span id='action_button_text_show'><%= @template_one.action_button_text %></span> 
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

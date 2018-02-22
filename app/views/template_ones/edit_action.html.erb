@@ -1,0 +1,32 @@
+<%= render 'template_ones/edit_partials/action' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :action_hide, label: "Hide this module on main page?" %> 
+    <div class="row">
+      <div class="col-sm-3"><%= f.input :action_text_1 %></div>
+      <div class="col-sm-3"><%= f.input :action_text_2 %></div>
+      <div class="col-sm-3"><%= f.input :action_text_3 %></div>
+      <div class="col-sm-3"><%= f.input :action_text_4 %></div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3"><%= f.input :action_text_5 %></div>
+      <div class="col-sm-3"><%= f.input :action_text_6 %></div>
+      <div class="col-sm-3"><%= f.input :action_text_7 %></div>
+      <div class="col-sm-3"><%= f.input :action_button_text %></div>
+    </div>
+    <%= f.input :action_use_default_image, label: "Use template default image?" %>
+    <label>Add Custom Image</label>
+    <%= f.input :action_image, as: :file, label: false %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<br><br><br><br>

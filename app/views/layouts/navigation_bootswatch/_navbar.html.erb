@@ -1,0 +1,58 @@
+<div class='container'>
+<% if @app_setting.navbar_color == 'primary' %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<% elsif @app_setting.navbar_color == 'dark' %>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<% elsif @app_setting.navbar_color == 'light' %>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <% else @app_setting.navbar_color == 'light' %>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <% end %>
+    <%= link_to root_path, class: "navbar-brand" do %>
+    <%= @app_setting.app_title %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor03">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+
+        <% if current_user.try(:admin) == true %>  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Admin Menu <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <%= link_to "App Settings", app_setting_path(@app_setting), class: 'dropdown-item' %> 
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <% end %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Select Course <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <% Course.all.each do |course| %>
+            <%= link_to course.name, course_path(course), class: 'dropdown-item' %>
+            <% end %> 
+          </div>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav ml-auto">
+        <% if !current_user %>
+        <% else %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download"><%= current_user.username if current_user  %> <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item' %> 
+            <div class="dropdown-divider"></div>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item' %>    
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,41 @@
+<br>
+<%= link_to 'Course Index', course_path(@course), class: 'btn btn-outline-secondary' %>
+<p>
+  <% if @post.user.image.present? %>
+  <% image_tag @post.user.image_url(:thumb), class: 'rounded-circle' %>
+  <% else %>
+  <% image_tag 'no_image.png', class: 'rounded-circle' %>
+  <% end %>
+</p>
+<div class="card text-center">
+  <div class="card-header">
+    <h3>
+      <span class="badge badge-primary">
+        <%= @post.title %>
+      </span> 
+    </h3>
+    <br>
+     <%= link_to 'Edit', edit_course_post_path(@course, @post), class: 'btn btn-outline-info pull-right' if current_user.try(:admin?) %>
+  </div>
+  <div class="card-block">
+    <h4 class="card-title"><span class="badge badge-secondary"><%= @post.section_name %></span> 
+    </h4>
+    <p class="card-text"></p>
+  </div>
+</div>
+<br>
+<%= @post.body.html_safe %>
+<%= render @post.comments.order(created_at: :desc ) %> 
+<p>
+  <% if current_user.try(:admin?) %> 
+  <br>
+<hr>
+<strong>Add Comment:</strong>
+<br>
+<hr>
+<%= render 'comments/form' %> 
+</p>
+<% link_to 'Edit', edit_course_post_comment_path(@course, @post.comments) if @post.user == current_user %> 
+<% end %> 
+<%= link_to 'Course Index', course_path(@course), class: 'btn btn-outline-secondary' %>
+<br><br><br><br>

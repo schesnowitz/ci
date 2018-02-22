@@ -1,0 +1,18 @@
+<hr>
+<p>
+  <% if comment.user.image.present? %>
+  <% image_tag comment.user.image_url(:thumb), class: 'rounded-circle' %>
+  <% else %>
+  <% image_tag 'no_image.png', class: 'rounded-circle' %>
+  <% end %> 
+<h6><% comment.user.username %></h6>
+<%= comment.body.html_safe %>
+</p>
+<p>
+  <script src=<%= comment.gist_link %>></script>
+</p>
+<% if current_user == comment.user %>   
+<%= link_to 'Edit Comment', edit_course_post_comment_path(@course, comment.post, comment), class: 'btn btn-outline-info btn-sm' %> 
+<%= link_to 'Delete', [@course, comment.post, comment], method: :delete, data: {confirm: "This can't be undone!" }, class: 'btn btn-danger btn-sm'%>
+<% end %>
+

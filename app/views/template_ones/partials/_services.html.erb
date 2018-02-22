@@ -1,0 +1,44 @@
+<!-- Services Section -->
+<% if @template_one.service_hide? %> 
+<% else %>
+<section class="page-section bg-light" id="services">
+  <div class="container-fluid">
+    <div class="wow fadeIn text-center">
+      <h1><%= @template_one.service_title_1 %></h1>
+      <p class="mb-0"><%= @template_one.service_text_1 %></p>
+    </div>
+    <hr class="colored">
+    <div class="row text-center">
+      <div class="col-lg-3 col-md-6">
+        <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".2s">
+          <i class="fa fa-<%= @template_one.service_icon_1 %> fa-4x"></i>
+          <h3><%= @template_one.service_title_2 %></h3>
+          <p class="mb-0"><%= @template_one.service_text_2 %></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".4s">
+          <i class="fa fa-<%= @template_one.service_icon_2 %> fa-4x"></i>
+          <h3><%= @template_one.service_title_3 %></h3>
+          <p class="mb-0"><%= @template_one.service_text_3 %></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="wow fadeIn px-4 pb-4 pb-lg-0 h-100" data-wow-delay=".6s">
+          <i class="fa fa-<%= @template_one.service_icon_3 %> fa-4x"></i>
+          <h3><%= @template_one.service_title_4 %></h3>
+          <p class="mb-0"><%= @template_one.service_text_4 %></p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="wow fadeIn px-4 h-100" data-wow-delay=".8s">
+          <i class="fa fa-<%= @template_one.service_icon_4 %> fa-4x"></i>
+          <h3><%= @template_one.service_title_5 %></h3>
+          <p class="mb-0"><%= @template_one.service_text_5 %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %> 
+<%= link_to "Edit Services", edit_services_path, class: "btn btn-outline-info btn-sm pull-right" if current_user.try(:admin?) %>

@@ -1,0 +1,24 @@
+<%= render 'template_ones/edit_partials/header' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :header_title%>
+    <%= f.input :header_text %>
+    <%= f.input :header_use_default_image, label: 'Use Template Default Image?' %>
+    <label>Upload Custom Image</label>
+    <%= f.input :header_image, as: :file, label: false %>  
+    <%= f.input :header_use_default_svg, label: 'Use Template SVG Image?' %>
+    <label>Upload Custom SVG</label>
+    <%= f.input :header_svg, as: :file, label: false %>  
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'Updating Header...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<br><br><br><br><br>

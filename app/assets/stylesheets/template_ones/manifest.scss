@@ -1,0 +1,28 @@
+
+// Core variables and mixins
+$themePrimary: #EF4035;
+$themeDark: #222;
+@import "scss/mixins.scss";
+// Global Styles
+@import "scss/global.scss";
+@import "scss/typography.scss";
+// Components
+@import "scss/navbar.scss";
+@import "scss/masthead.scss";
+@import "scss/team.scss";
+@import "scss/call-to-action.scss";
+@import "scss/services.scss";
+@import "scss/portfolio.scss";
+@import "scss/testimonials.scss";
+@import "scss/pricing.scss";
+@import "scss/signup-form.scss";
+@import "scss/contact.scss";
+@import "scss/footer.scss";
+// Bootstrap and Plugin Overrides
+@import "scss/bootstrap-overrides.scss";
+@import "scss/owl-carousel-overrides.scss";
+
+// Gems
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'bootstrap'; 

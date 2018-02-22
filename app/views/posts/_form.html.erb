@@ -1,0 +1,18 @@
+<%= tinymce_assets %><%= tinymce %>
+<%= form_for [@course, @course.posts.build] do |f| %>
+<div class="form-inputs">
+  <label for="">Section Name</label><br>
+<%= f.select :section_name, (Post::RUBY_SECTIONS), class: "form-control" %>
+  <br>
+  <label for="">Lecture Number</label>
+  <%= f.number_field :lecture_number, class: "form-control" %>
+  <label for="">Video Title</label><br>
+  <%= f.text_field :title, class: "form-control" %>
+  <br>
+  <%= f.text_area :body,  class: "tinymce", :rows => 20, :cols => 40 %>
+  <%= f.number_field :course_id %>
+</div>
+<div class="form-actions">
+  <%= f.button :submit, class: 'btn btn btn-outline-success' %>
+</div>
+<% end %>

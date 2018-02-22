@@ -1,0 +1,68 @@
+<% @projects.each do |modal_data| %>
+
+<!-- Example Modal 1: Corresponds with Portfolio Carousel Item 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url(<%= asset_url modal_data.modal_image_1_url(:modal_image_1) if modal_data.modal_image_1.present? %>)">
+    
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2><%= modal_data.modal_name %></h2>
+                  <hr class="colored">
+                  <p><%= modal_data.modal_description %></p>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <div class="device-mockup macbook portrait black">
+                    <div class="device">
+                      <div class="screen">
+
+                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
+                        <!-- <img src="img/agency/portfolio/carousel/screen-1a.jpg" class="img-fluid" alt=""> -->
+
+                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
+                        <div class="mockup-carousel">
+                          <div class="item">
+                            <img src="<%= asset_url modal_data.modal_image_2_url(:modal_image_2) if modal_data.modal_image_2.present? %>" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="<%= asset_url modal_data.modal_image_3_url(:modal_image_3) if modal_data.modal_image_3.present? %>" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="<%= asset_url modal_data.modal_image_4_url(:modal_image_4) if modal_data.modal_image_4.present? %>" class="img-fluid" alt="">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong><%= modal_data.modal_client %></strong>
+                    </li>
+                    <li>Date:
+                      <strong><%= modal_data.modal_date %></strong>
+                    </li>
+                    <li>Service:
+                      <strong><%= modal_data.modal_service %></strong>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% end %>

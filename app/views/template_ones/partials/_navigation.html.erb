@@ -1,0 +1,104 @@
+<!-- Navigation -->
+<% if !@template_one.navigation_hide? %>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <%= image_tag 'ciLogo100.png', class: 'logo' %>
+    <%= @template_one.navigation_title %> 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+    Menu
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <% if !@template_one.about_hide == true %>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <% end %>
+        <% if !@template_one.service_hide? %> 
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+        </li>
+        <% end %>  
+        <% if !@template_one.process_hide? %>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#process">Process</a>
+        </li>
+        <% end %>
+        <% if @template_one.portfolio_header_hide == false %> 
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#work">Work</a>
+        </li>
+        <% end %>  
+        <% if @template_one.contact_hide == false %>  
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <% end %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Apps <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <% @links.each do |link| %>
+            <% if link.open_in_new_tab? %>
+            <%= link_to "http://#{link.url}", target: '_blank', class: "dropdown-item" do %>
+            <%= link.name %>
+            <% end %>
+            <% else %>
+            <%= link_to "http://#{link.url}", class: "dropdown-item" do %>
+            <%= link.name  %>
+            <% end %>
+            <% end %>
+            <% end %>
+          </div>
+        </li>
+        <% if current_user.try(:admin?) %> 
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Admin <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <%= link_to "Backend", courses_path, class: 'dropdown-item' %>  
+            <%= link_to "Administration", rails_admin_path, class: 'dropdown-item', target: :_blank %>  
+            <%= link_to "Edit Account", edit_user_registration_path, class: 'dropdown-item' %> 
+            <div class="dropdown-divider"></div>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item' %>  
+          </div>
+        </li>
+        <% end %>
+        <% if !current_user %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Account <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <%= link_to "Sign In", new_user_session_path, class: 'dropdown-item' %>  
+            <div class="dropdown-divider"></div>
+            <%= link_to "Create Account", new_user_registration_path, class: 'dropdown-item' %> 
+          </div>
+        </li>
+        <% elsif current_user && current_user.try(:admin) == false %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download"><%= current_user.first_name %> <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <%= link_to "Edit Account", edit_user_registration_path, class: 'dropdown-item' %> 
+            <div class="dropdown-divider"></div>
+            <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item' %>  
+          </div>
+        </li>
+        <% end %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Select Course <span class="caret"></span></a>
+          <div class="dropdown-menu" aria-labelledby="download">
+            <% Course.all.each do |course| %>
+            <%= link_to course.name, course_path(course), class: 'dropdown-item' %>
+            <% end %>
+          </div>
+        </li>
+        <% if current_user.try(:admin?) %>  
+        <li class="nav-item">
+          <%= link_to "Edit Navigation", edit_navigation_path, class: "btn btn-outline-info btn-sm" %> 
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
+<% end %>

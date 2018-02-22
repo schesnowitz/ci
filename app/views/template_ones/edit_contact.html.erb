@@ -1,0 +1,33 @@
+<div class='container'>
+  <%= bootstrap_flash %> 
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <div class="row">
+      <div class="col-sm-4">
+        <br>
+        <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+        <br><br>
+        <%= f.input :contact_hide, label: 'Hide this module?' %>
+        <br><br><br><br><br>
+        <%= f.input :contact_title %>
+        <%= f.input :contact_text %>
+        <%= f.input :contact_sender_hide_name, label: 'Hide Name Field?' %>     
+        <% f.input :contact_sender_name %> 
+        <% f.input :contact_sender_email %>
+        <%= f.input :contact_sender_hide_phone, label: 'Hide Phone Field?' %>
+        <% f.input :contact_sender_phone %>
+        <%= f.input :contact_sender_hide_message, label: 'Hide Message Field?' %>
+        <% f.input :contact_sender_message %>
+      </div>
+      <div class="col-sm-8">
+        <%= render 'template_ones/edit_partials/contact', f: f %>
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'Updating Header...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<br><br><br><br><br><br>

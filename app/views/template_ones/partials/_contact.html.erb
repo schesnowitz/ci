@@ -1,0 +1,62 @@
+<% if @template_one.contact_hide == false %>
+<!-- Contact Section -->
+<section class="page-section" id="contact">
+  <div class="container wow fadeIn">
+    <div class="text-center">
+      <h2><%= @template_one.contact_title %></h2>
+      <hr class="colored">
+      <p><%= @template_one.contact_text %></p>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-8 mx-auto">
+        <%= simple_form_for @incoming_contact do |ic| %>
+        <form name="sentMessage" id="contactForm" novalidate>
+        <% if @template_one.contact_sender_hide_name == false %>
+          <div class="row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label>Name</label>
+              <%= ic.input :name, label: false, placeholder: "Name" %>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <% end %>
+          <div class="row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label>Email Address</label>
+              <%= ic.input :email, label: false, placeholder: "Email" %>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <% if @template_one.contact_sender_hide_phone == false %>
+          <div class="row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label>Phone Number</label>
+              <%= ic.input :phone, label: false, placeholder: "Telephone" %>
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <% end %>
+          <% if @template_one.contact_sender_hide_message == false %>
+          <div class="row control-group">
+            <div class="form-group col-12 floating-label-form-group controls">
+              <label>Message</label>
+              <%= ic.input :message, label: false, placeholder: "Message" %> 
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <% end %>
+          <br>
+          <div id="success"></div>
+          <div class="row">
+            <div class="form-group col-12">
+              <%= ic.submit "Send Message", class: 'btn btn-info' %>   
+            </div>
+          </div>
+        </form>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+<% end %>
+<%= link_to "Edit Contact", edit_contact_path, class: "btn btn-outline-info btn-sm pull-right" if current_user.try(:admin?) %>

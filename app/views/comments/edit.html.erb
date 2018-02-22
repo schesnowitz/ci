@@ -1,0 +1,8 @@
+<%= tinymce_assets %><%= tinymce %>
+<h3>Edit Comment</h3>
+<%= simple_form_for [@course, @post, @comment] do |f| %>
+
+<%= f.text_area :body, :class => "tinymce", :rows => 20, :cols => 40%>
+
+<%= f.submit "Post Comment", class: 'btn btn btn-outline-success' %>
+<% end %>

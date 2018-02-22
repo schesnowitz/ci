@@ -1,0 +1,69 @@
+<%= render 'template_ones/edit_partials/process' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :process_hide, label: "Hide this module on main page?" %> 
+    <div class="row">
+      <div class="col-sm-3">
+        <h5>Title & Text</h5>
+        <%= f.input :main_process_title, label: 'Main Title' %>
+        <%= f.input :main_process_title_text, label: 'Main Title Text' %>
+      </div>
+      <div class="col-sm-3">
+        <h5>Icon & Text 1</h5>
+        <label>Icon 1</label>
+        <i id='process_icon_1_input' class="fa fa-<%= @template_one.process_icon_1 %> fa-fw fa-2x"></i>
+        <%= f.input :process_icon_1, collection: TemplateOne::FA_ICONS, include_blank: false, label: false %>
+        <%= f.input :sub_title_1, label: 'Icon Text' %>
+      </div>
+      <div class="col-sm-3">
+        <h5>Icon & Text 2</h5>
+        <label>Icon 2</label>
+        <i id='process_icon_2_input' class="fa fa-<%= @template_one.process_icon_2 %> fa-fw fa-2x"></i>
+        <%= f.input :process_icon_2, collection: TemplateOne::FA_ICONS, include_blank: false, label: false %>
+        <%= f.input :sub_title_2, label: 'Icon Text' %>
+      </div>
+      <div class="col-sm-3">
+        <h5>Icon & Text 3</h5>
+        <label>Icon 3</label>
+        <i id='process_icon_3_input' class="fa fa-<%= @template_one.process_icon_3 %> fa-fw fa-2x"></i>
+        <%= f.input :process_icon_3, collection: TemplateOne::FA_ICONS, include_blank: false, label: false %>
+        <%= f.input :sub_title_3, label: 'Icon Text' %>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4">
+        <h5>List Items Icon 1</h5>
+        <%= f.input :process_li_1, label: 'List Item 1' %>
+        <%= f.input :process_li_2, label: 'List Item 2' %>
+        <%= f.input :process_li_3, label: 'List Item 3' %>
+        <%= f.input :process_li_4, label: 'List Item 4' %>
+      </div>
+      <div class="col-sm-4">
+        <h5>List Items Icon 2</h5>
+        <%= f.input :process_li_5, label: 'List Item 1' %>
+        <%= f.input :process_li_6, label: 'List Item 2' %>
+        <%= f.input :process_li_7, label: 'List Item 3' %>
+        <%= f.input :process_li_8, label: 'List Item 4' %>
+      </div>
+      <div class="col-sm-4">
+        <h5>List Items Icon 3</h5>
+        <%= f.input :process_li_9, label: 'List Item 1' %>
+        <%= f.input :process_li_10, label: 'List Item 2' %>
+        <%= f.input :process_li_11, label: 'List Item 3' %>
+        <%= f.input :process_li_12, label: 'List Item 4' %>
+      </div>
+    </div>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<br><br><br><br>

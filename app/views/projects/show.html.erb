@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Button text:</strong>
+  <%= @project.button_text %>
+</p>
+
+<p>
+  <strong>Image 1:</strong>
+  <%= @project.image_1 %>
+</p>
+
+<p>
+  <strong>Image 2:</strong>
+  <%= @project.image_2 %>
+</p>
+
+<p>
+  <strong>Template one:</strong>
+  <%= @project.template_one_id %>
+</p>
+<%= link_to 'Back', edit_portfolio_carousel_path(@template_one), class: 'btn btn-success' %>
+

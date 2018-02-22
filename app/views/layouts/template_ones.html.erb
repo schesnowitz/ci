@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Custom fonts for this theme -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet' type='text/css'>
+  
+    <title><%= @app_setting.tab_name %></title>  
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'template_ones/js_css/manifest.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    
+    <%= stylesheet_link_tag 'template_ones/manifest', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= stylesheet_link_tag 'template_ones/custom', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <% if @app_setting.front_end_color == 'red' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-red.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'aqua' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-aqua.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'blue' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-blue.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'green' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-green.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'orange' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-orange.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'pink' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-pink.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'purple' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-purple.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <% elsif @app_setting.front_end_color == 'tan' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-tan.css', media: 'all', 'data-turbolinks-track': 'reload' %> 
+  <% elsif @app_setting.front_end_color == 'turquoise' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-turquoise.css', media: 'all', 'data-turbolinks-track': 'reload' %> 
+  <% else @app_setting.front_end_color == 'yellow' %>
+    <%= stylesheet_link_tag 'template_ones/themes/vitality-yellow.css', media: 'all', 'data-turbolinks-track': 'reload' %> 
+  <% end %>    
+
+
+    <%= javascript_include_tag 'template_ones/manifest.js', 'data-turbolinks-track': 'reload' %>
+
+
+
+ 
+  </head>
+
+<body id="page-top">
+    <%= yield %>
+  </body>
+</html>

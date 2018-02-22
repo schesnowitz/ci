@@ -1,0 +1,381 @@
+body,user_id,post_id
+"<h2>Visual Studio User Settings</h2>
+ 
+ <p><code></code></p>
+ 
+ <p><code>{</code></p>
+ 
+ <p><code>&nbsp; ""files.autoSave"": ""afterDelay"",&nbsp;</code></p>
+ 
+ <p><code>&nbsp; ""editor.tabSize"": 2,</code></p>
+ 
+ <p><code>&nbsp; ""editor.fontSize"": 20,</code></p>
+ 
+ <p><code>&nbsp; ""window.zoomLevel"": 0</code></p>
+ 
+ <p><code>}</code></p>",1,6
+"<p>inside the cmder folder create vscode.bat (easiest way is to use Visual Studio Code to create and edit this new file)</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>@echo off</code></p>
+ 
+ <p><code>SET CMDER_ROOT=C:\cmder</code></p>
+ 
+ <p><code>""%CMDER_ROOT%\vendor\init.bat""</code></p>",1,7
+"<p>&nbsp;</p>
+ 
+ <p><code>string = ""I have a new red jacket and it looks great with my red car.""</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>puts string.sub(""red"", ""green"")</code></p>
+ 
+ <p><code>puts string.gsub(""red"", ""pink"")</code></p>
+ 
+ <p><code>puts string</code></p>
+ 
+ <p><code># the sub method will find the first instance</code></p>
+ 
+ <p><code># the gsub method will find ""global"" gsub = global substitutiion</code></p>",1,13
+"<p>&nbsp;</p>
+ 
+ <p><code># Please Excuse My Dear Aunt Sally</code></p>
+ 
+ <p><code># PEMDAS</code></p>
+ 
+ <p><code>PEMDAS =</code></p>
+ 
+ <p><code>""</code></p>
+ 
+ <p><code>P - Parentheses '()'</code></p>
+ 
+ <p><code>E - Exponents '**'</code></p>
+ 
+ <p><code>M - Multiplication '*'</code></p>
+ 
+ <p><code>D - Division '/'</code></p>
+ 
+ <p><code>A - Addition '+'</code></p>
+ 
+ <p><code>S - Subtraction '-'</code></p>
+ 
+ <p><code>""</code></p>
+ 
+ <p><code>puts PEMDAS</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>p 3 + 15 * 23 - 5 / 8**4 + (3 * 2)</code></p>
+ 
+ <p><code># 3 + 15 * 23 - 5 / 8**4 + 6</code></p>
+ 
+ <p><code># 3 + 15 * 23 - 5 / 4096 + 6</code></p>
+ 
+ <p><code># 3 + 345 - 5 / 4096 + 6</code></p>
+ 
+ <p><code># 3 + 345 - 5 / 4096 + 6</code></p>
+ 
+ <p><code># 3 + 345 - 0 + 6</code></p>
+ 
+ <p><code># 348 - 0 + 6</code></p>
+ 
+ <p><code># p (5 * 4096) + (6 - 3)</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Integer (2, 5 , 5675)</code></p>
+ 
+ <p><code># Float (1.2, 1.3 , 6.3)</code></p>
+ 
+ <p><code># Decimal (2.3654121, 5.36542)</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>p 101.0 / 80.0</code></p>",1,14
+"<p><code>=begin</code></p>
+ 
+ <p><code>##</code></p>
+ 
+ <p><code>+ Addition &minus; Adds values on either side of the operator.</code></p>
+ 
+ <p><code>a + b will give 30</code></p>
+ 
+ <p><code>##</code></p>
+ 
+ <p><code>&minus; Subtraction &minus; Subtracts right hand operand from left hand operand.</code></p>
+ 
+ <p><code>&nbsp;a - b will give -10</code></p>
+ 
+ <p><code>## </code></p>
+ 
+ <p><code>* Multiplication &minus; Multiplies values on either side of the operator.</code></p>
+ 
+ <p><code>a * b will give 200</code></p>
+ 
+ <p><code>##</code></p>
+ 
+ <p><code>/ Division &minus; Divides left hand operand by right hand operand.</code></p>
+ 
+ <p><code>b / a will give 2</code></p>
+ 
+ <p><code>##</code></p>
+ 
+ <p><code>% Modulus &minus; Divides left hand operand by right hand operand and returns remainder.</code></p>
+ 
+ <p><code>b % a will give 0</code></p>
+ 
+ <p><code>##</code></p>
+ 
+ <p><code>** Exponent &minus; Performs exponential (power) calculation on operators.</code></p>
+ 
+ <p><code>a**b</code></p>
+ 
+ <p><code>=end</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Addition</code></p>
+ 
+ <p><code>p 5 + 5</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Subtraction</code></p>
+ 
+ <p><code>p 10 - 3</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Multiplication</code></p>
+ 
+ <p><code>p 2 * 3</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Division</code></p>
+ 
+ <p><code>p 10 / 3</code></p>
+ 
+ <p><code>p 10 / 3.0</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Modulus</code></p>
+ 
+ <p><code>p 10 % 3</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code># Exponents</code></p>
+ 
+ <p><code>&nbsp;p 3 ** 3&nbsp;</code></p>
+ 
+ <p><code>&nbsp;p 3 * 3 * 3</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>#&nbsp; PEMDAS</code></p>
+ 
+ <p><code>var_1 = ( 5 + 5 )</code></p>
+ 
+ <p><code>var_2 = (2 * 3)</code></p>
+ 
+ <p><code>p var_2 + var_1</code></p>",1,12
+"<table class=""highlight tab-size js-file-line-container"" style=""box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; tab-size: 8; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; float: left;"" data-tab-size=""8"">
+ 
+ <tbody style=""box-sizing: border-box;"">
+ 
+ <tr style=""box-sizing: border-box;"">
+ 
+ <td id=""LC1"" class=""blob-code blob-code-inner js-file-line"" style=""box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; word-wrap: normal; white-space: pre; text-align: left;"">&nbsp;</td>
+ 
+ </tr>
+ 
+ </tbody>
+ 
+ </table>
+ 
+ <p><code>system ""cls""</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>PASSWORD = ""1234""</code></p>
+ 
+ <p><code>@title = ""Agent""</code></p>
+ 
+ <p><code>def timer_message</code></p>
+ 
+ <p><code>&nbsp; puts ""#{@title}-#{@name}, This message will self destruct in 5 seconds...""</code></p>
+ 
+ <p><code>&nbsp; puts ""5""</code></p>
+ 
+ <p><code>&nbsp; sleep 1</code></p>
+ 
+ <p><code>&nbsp; puts ""4""</code></p>
+ 
+ <p><code>&nbsp; sleep 1</code></p>
+ 
+ <p><code>&nbsp; puts ""3""</code></p>
+ 
+ <p><code>&nbsp; sleep 1</code></p>
+ 
+ <p><code>&nbsp; puts ""2""</code></p>
+ 
+ <p><code>&nbsp; sleep 1</code></p>
+ 
+ <p><code>&nbsp; puts ""1""</code></p>
+ 
+ <p><code>&nbsp; sleep 1</code></p>
+ 
+ <p><code>&nbsp; system 'cls'</code></p>
+ 
+ <p><code>end</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>def mission_impossible</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>&nbsp; print ""Please enter your name: ""</code></p>
+ 
+ <p><code>&nbsp; @name = gets.chomp.strip</code></p>
+ 
+ <p><code>&nbsp; print ""#{@name}, Please enter your password provided by agent x: ""</code></p>
+ 
+ <p><code>&nbsp; pass = gets.chomp.strip</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>&nbsp; if pass == PASSWORD</code></p>
+ 
+ <p><code>&nbsp; &nbsp; puts ""The secret code is XCD343$$ -- Good luck #{@name}!""</code></p>
+ 
+ <p><code>&nbsp; else</code></p>
+ 
+ <p><code>&nbsp; &nbsp;timer_message</code></p>
+ 
+ <p><code>&nbsp; end</code></p>
+ 
+ <p><code>end</code></p>
+ 
+ <p><code>mission_impossible</code></p>
+ 
+ <p>&nbsp;</p>",1,21
+"<p># Gosu&nbsp;</p>
+ 
+ <p><a href=""https://github.com/gosu/gosu/wiki/Getting-Started-on-Windows"" target=""_blank"" rel=""noopener"">https://github.com/gosu/gosu/wiki/Getting-Started-on-Windows</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># Tutorial</p>
+ 
+ <p><a title=""https://github.com/gosu/gosu/wiki/Ruby-Tutorial"" href=""https://github.com/gosu/gosu/wiki/Ruby-Tutorial"" target=""_blank"" rel=""noopener"">https://github.com/gosu/gosu/wiki/Ruby-Tutorial</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># KB Links</p>
+ 
+ <p><a href=""https://www.libgosu.org/cpp/namespace_gosu.html#ab085b2dbdd533b49dadaf217dbcf8368"" target=""_blank"" rel=""noopener"">https://www.libgosu.org/cpp/namespace_gosu.html#ab085b2dbdd533b49dadaf217dbcf8368</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># Full Code</p>
+ 
+ <p><a href=""https://github.com/gosu/gosu-examples/blob/master/examples/tutorial.rb"" target=""_blank"" rel=""noopener"">https://github.com/gosu/gosu-examples/blob/master/examples/tutorial.rb</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># require vs require_relative</p>
+ 
+ <p><a href=""https://stackoverflow.com/questions/3672586/what-is-the-difference-between-require-relative-and-require-in-ruby"" target=""_blank"" rel=""noopener"">https://stackoverflow.com/questions/3672586/what-is-the-difference-between-require-relative-and-require-in-ruby</a></p>",1,28
+"<h1 class=""public css-truncate"" style=""box-sizing: border-box; font-size: 18px; margin: 0px; font-weight: normal; line-height: 26px; position: relative; max-width: 635px; padding-left: 32px; color: #586069; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; background-color: #fafbfc;""><span class=""gist-header-title css-truncate-target"" style=""box-sizing: border-box; font-weight: 600; display: inline-block; max-width: 525px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; vertical-align: top;""><a style=""box-sizing: border-box; background-color: transparent; color: #0366d6; outline-width: 0px;"" href=""https://gist.github.com/schesnowitz/aaa23159504fc2ba659dadf8eea86fb0"">VS Code user settings</a></span></h1>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>{</code></p>
+ 
+ <p><code>&nbsp; ""files.autoSave"": ""afterDelay"",&nbsp;</code></p>
+ 
+ <p><code>&nbsp; ""editor.tabSize"": 2,</code></p>
+ 
+ <p><code>&nbsp; ""editor.fontSize"": 20,</code></p>
+ 
+ <p><code>&nbsp; ""window.zoomLevel"": 2,</code></p>
+ 
+ <p><code>&nbsp; ""editor.wordWrap"": ""wordWrapColumn"",</code></p>
+ 
+ <p><code>&nbsp; ""editor.tabCompletion"": true,</code></p>
+ 
+ <p><code>&nbsp; ""emmet.includeLanguages"": {""erb"": ""html""},</code></p>
+ 
+ <p><code>&nbsp; ""files.associations"": {""*.erb"": ""html""},&nbsp;&nbsp;</code></p>
+ 
+ <p><code>&nbsp; ""terminal.integrated.shell.windows"": ""C:\\WINDOWS\\System32\\cmd.exe"",</code></p>
+ 
+ <p><code>&nbsp; ""terminal.integrated.shellArgs.windows"": [""/K"", ""C:\\cmder\\vscode.bat""]</code></p>
+ 
+ <p><code>}</code></p>",1,31
+"<p>create a vscode.bat file inside your cmder folder and add:</p>
+ 
+ <p><code>@echo off</code></p>
+ 
+ <p><code>SET CMDER_ROOT=C:\cmder</code></p>
+ 
+ <p><code>""%CMDER_ROOT%\vendor\init.bat""</code></p>",1,34
+"<p>Visual Studio Code Settings:</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>{</code></p>
+ 
+ <p><code>&nbsp; ""files.autoSave"": ""afterDelay"",&nbsp;</code></p>
+ 
+ <p><code>&nbsp; ""editor.tabSize"": 2,</code></p>
+ 
+ <p><code>&nbsp; ""editor.fontSize"": 20,</code></p>
+ 
+ <p><code>&nbsp; ""window.zoomLevel"": 0,</code></p>
+ 
+ <p><code>&nbsp; ""editor.wordWrap"": ""wordWrapColumn"",</code></p>
+ 
+ <p><code>&nbsp; ""editor.tabCompletion"": true,</code></p>
+ 
+ <p><code>&nbsp; ""emmet.includeLanguages"": {""erb"": ""html""},</code></p>
+ 
+ <p><code>&nbsp; ""terminal.integrated.shell.windows"": ""C:\\WINDOWS\\System32\\cmd.exe"",</code></p>
+ 
+ <p><code>&nbsp; ""terminal.integrated.shellArgs.windows"": [""/K"", ""C:\\cmder\\vscode.bat""]</code></p>
+ 
+ <p><code>}</code></p>",1,34
+"<p>Links used in this section:</p>
+ 
+ <p># Devise</p>
+ 
+ <p><a href=""https://github.com/plataformatec/devise"" target=""_blank"" rel=""noopener"">https://github.com/plataformatec/devise</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># bootstrap-sass-extras</p>
+ 
+ <p><a href=""https://github.com/doabit/bootstrap-sass-extras"" target=""_blank"" rel=""noopener"">https://github.com/doabit/bootstrap-sass-extras</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># navbar</p>
+ 
+ <p><a href=""https://v4-alpha.getbootstrap.com/components/navbar/#toggler"" target=""_blank"" rel=""noopener"">https://v4-alpha.getbootstrap.com/components/navbar/#toggler</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><a href=""https://github.com/twbs/bootstrap-rubygem/issues/88"" target=""_blank"" rel=""noopener"">https://github.com/twbs/bootstrap-rubygem/issues/88</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p># bootswatch</p>
+ 
+ <p><a title=""https://bootswatch.com/"" href=""https://bootswatch.com/"" target=""_blank"" rel=""noopener"">https://bootswatch.com/</a></p>
+ 
+ <p>&nbsp;</p>",1,41
+"<p>The new Repo:&nbsp;&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app</a></p>",1,42

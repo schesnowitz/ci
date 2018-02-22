@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= @app_setting.tab_name %></title>  
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'default' %>
+
+    <%= stylesheet_link_tag 'cerulean/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'cerulean' %>
+
+    <%= stylesheet_link_tag 'cosmo/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'cosmo' %>
+
+    <%= stylesheet_link_tag 'cyborg/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'cyborg' %>  
+
+    <%= stylesheet_link_tag 'darkly/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'darkly' %> 
+
+    <%= stylesheet_link_tag 'flatly/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'flatly' %> 
+
+    <%= stylesheet_link_tag 'journal/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'journal' %>  
+
+    <%= stylesheet_link_tag 'litera/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'litera' %>
+
+    <%= stylesheet_link_tag 'lumen/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'lumen' %>
+
+     <%= stylesheet_link_tag 'lux/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'lux' %>
+
+    <%= stylesheet_link_tag 'materia/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload'if @app_setting.theme_name == 'materia'  %> 
+
+    <%= stylesheet_link_tag 'minty/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'minty' %>
+
+    <%= stylesheet_link_tag 'pulse/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'pulse' %>
+
+    <%= stylesheet_link_tag 'simplex/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'simplex' %>
+
+    <%= stylesheet_link_tag 'sketchy/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'sketchy' %>
+
+    <%= stylesheet_link_tag 'slate/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'slate' %>
+
+    <%= stylesheet_link_tag 'solar/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'solar' %>
+
+    <%= stylesheet_link_tag 'spacelab/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'spacelab' %>
+
+    <%= stylesheet_link_tag 'superhero/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'superhero' %>
+
+    <%= stylesheet_link_tag 'united/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'united' %>
+
+    <%= stylesheet_link_tag 'yeti/theme_manifest', media: 'all',  'data-turbolinks-track': 'reload' if @app_setting.theme_name == 'yeti' %> 
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+ 
+  <body>
+  <%= render 'layouts/navigation_bootswatch/navbar' %> 
+  <div class='container'>  
+  <%= bootstrap_flash %>
+    <%= yield %>
+  </div>
+  </body>
+</html>

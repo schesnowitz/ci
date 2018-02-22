@@ -1,0 +1,18 @@
+<%= render 'template_ones/edit_partials/navigation' %> 
+<%= render 'template_ones/partials/header' %> 
+<div class='container'>
+  <%= bootstrap_flash %> 
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :navigation_hide, label: "Hide this module on main page?" %> 
+    <%= f.input :navigation_title %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>

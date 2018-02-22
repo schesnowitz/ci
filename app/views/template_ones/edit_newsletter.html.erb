@@ -1,0 +1,17 @@
+<%= render 'template_ones/edit_partials/newsletter' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :newsletter_hide, label: "Hide this module on main page?" %> 
+    <%= f.input :newsletter_title %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'Updating Newsletter'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>

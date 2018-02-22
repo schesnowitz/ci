@@ -1,0 +1,19 @@
+<%= render 'template_ones/edit_partials/portfolio_carousel_heading' %> 
+<div class='container'>
+  <%= bootstrap_flash %>  
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <%= f.input :portfolio_header_hide, label: "Hide this module on main page?" %>  
+  <div class="form-inputs col-sm-8 mx-auto">
+    <%= f.input :portfolio_header_title %>
+    <%= f.input :portfolio_header_text %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<br><br><br><br>

@@ -1,0 +1,446 @@
+title,body,lecture_number,section_number,section_name,user_id,course_id
+Who is Ruby?,"<p><a href=""https://www.ruby-lang.org/en/"" target=""_blank"" rel=""noopener"">https://www.ruby-lang.org/en/</a></p>
+ 
+ <p><a href=""https://en.wikipedia.org/wiki/Ruby_(programming_language)"" target=""_blank"" rel=""noopener"">https://en.wikipedia.org/wiki/Ruby_(programming_language)</a></p>",2,1,Section 1 - The Set Up,1,1
+Windows Setup,"<p><a href=""http://www.7-zip.org/"" target=""_blank"" rel=""noopener"">http://www.7-zip.org/</a></p>
+ 
+ <p><a href=""https://rubyinstaller.org/"" target=""_blank"" rel=""noopener"">https://rubyinstaller.org/</a></p>
+ 
+ <p>&nbsp;</p>",3,1,Section 1 - The Set Up,1,1
+Ubuntu Setup,"<h4>In this video we use a Cloud Intergrated Development Environment (IDE) to show how we can set Ruby up on Ubuntu.</h4>
+ 
+ <p><a href=""c9.io"" target=""_blank"" rel=""noopener"">c9.io</a></p>",5,1,Section 1 - The Set Up,1,1
+Command Prompt Windows,"<p><a href=""http://cmder.net/"" target=""_blank"" rel=""noopener"">http://cmder.net/</a></p>
+ 
+ <p>&nbsp;</p>",6,1,Section 1 - The Set Up,1,1
+The Code Editor,"<p><a href=""https://code.visualstudio.com"" target=""_blank"" rel=""noopener"">https://code.visualstudio.com</a></p>",7,1,Section 1 - The Set Up,1,1
+VS Code and Cmder,"<p><a href=""https://code.visualstudio.com/docs/editor/integrated-terminal"">https://code.visualstudio.com/docs/editor/integrated-terminal</a></p>
+ 
+ <h2 style=""box-sizing: border-box; margin-top: 0px; margin-bottom: 0.5rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-weight: 500; line-height: 1.2; color: #444444; font-size: 1.75rem;"">Visual Studio User Settings</h2>
+ 
+ <p><code>{</code></p>
+ 
+ <p><code>&nbsp; ""files.autoSave"": ""afterDelay"",&nbsp;</code></p>
+ 
+ <p><code>&nbsp; ""editor.tabSize"": 2,</code></p>
+ 
+ <p><code>&nbsp; ""editor.fontSize"": 20,</code></p>
+ 
+ <p><code>&nbsp; ""window.zoomLevel"": 0,</code></p>
+ 
+ <p><code>&nbsp; ""terminal.integrated.shell.windows"": ""C:\\WINDOWS\\System32\\cmd.exe"",</code></p>
+ 
+ <p><code>&nbsp; ""terminal.integrated.shellArgs.windows"": [""/K"", ""C:\\cmder\\vscode.bat""]</code></p>
+ 
+ <p><code>}</code></p>",8,1,Section 1 - The Set Up,1,1
+Running In The Cloud/Browser,"<p>Run Ruby in your browser</p>
+ 
+ <p><a href=""https://repl.it/"" target=""_blank"" rel=""noopener"">https://repl.it/</a></p>
+ 
+ <p>&nbsp;</p>",9,1,Section 1 - The Set Up,1,1
+Section 2,"<p><strong>Code for this section can be found at...</strong></p>
+ 
+ <p><code><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-2-3-4"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-2-3-4</a></code></p>
+ 
+ <p><code></code><code></code></p>",10,-,Section 2 - Some Of The Basics,1,1
+Introduction To The Hub,"<p>setup an account at&nbsp;</p>
+ 
+ <p><a href=""https://github.com/"" target=""_blank"" rel=""noopener"">https://github.com/</a></p>
+ 
+ <p>download git from</p>
+ 
+ <p><a href=""https://git-scm.com/"" target=""_blank"" rel=""noopener"">https://git-scm.com/</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>&nbsp;</p>",20,-,Section 4 - Welcome to Git,1,1
+Orgainize With Git,"<p><a href=""https://ruby-doc.org/core-2.2.0/Method.html"" target=""_blank"" rel=""noopener"">https://ruby-doc.org/core-2.2.0/Method.html</a></p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-5"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-5</a></p>",25,-,Section 5 - It's a String Thing,1,1
+Math Operators,"<p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-6"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-6</a></p>",33,-,Section 6 - Ruby Loves Arithmetic,1,1
+Substitute Text,"<table class=""highlight tab-size js-file-line-container"" style=""box-sizing: border-box; border-spacing: 0px; border-collapse: collapse; tab-size: 8; color: #24292e; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';"" data-tab-size=""8"">
+ 
+ <tbody style=""box-sizing: border-box;"">
+ 
+ <tr style=""box-sizing: border-box;"">
+ 
+ <td id=""LC1"" class=""blob-code blob-code-inner js-file-line"" style=""box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; word-wrap: normal; white-space: pre;""><span class=""pl-c"" style=""box-sizing: border-box; color: #6a737d;""><span class=""pl-c"" style=""box-sizing: border-box;"">#</span> <a href=""https://ruby-doc.org/core-2.2.0/String.html#method-i-sub"" target=""_blank"" rel=""noopener"">https://ruby-doc.org/core-2.2.0/String.html#method-i-sub</a></span></td>
+ 
+ </tr>
+ 
+ <tr style=""box-sizing: border-box;"">
+ 
+ <td id=""L2"" class=""blob-num js-line-number"" style=""box-sizing: border-box; padding: 0px 10px; width: 50px; min-width: 50px; font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; line-height: 20px; color: rgba(27, 31, 35, 0.3); text-align: right; white-space: nowrap; vertical-align: top; cursor: pointer; user-select: none;"" data-line-number=""2"">&nbsp;</td>
+ 
+ <td id=""LC2"" class=""blob-code blob-code-inner js-file-line"" style=""box-sizing: border-box; padding: 0px 10px; position: relative; line-height: 20px; vertical-align: top; overflow: visible; font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace; font-size: 12px; word-wrap: normal; white-space: pre;"">&nbsp;</td>
+ 
+ </tr>
+ 
+ </tbody>
+ 
+ </table>
+ 
+ <p>&nbsp;</p>",29,-,Section 5 - It's a String Thing,1,1
+Order of Operators,"<p><a href=""https://en.wikipedia.org/wiki/Order_of_operations"" target=""_blank"" rel=""noopener"">https://en.wikipedia.org/wiki/Order_of_operations</a></p>",34,-,Section 6 - Ruby Loves Arithmetic,1,1
+Set as Decimal,-,35,-,Section 6 - Ruby Loves Arithmetic,1,1
+The Method - A Quick Review,"<p>Code for this section can be found at...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-7"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-7</a></p>",36,-,Section 7 - Ruby Methods,1,1
+Math Operators,"<p>Code can be found at ....</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-8"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-8</a></p>",45,-,Section 8 - Ruby Operators,1,1
+Convert It,"<p>Code can be found...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-9"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-9</a></p>",48,-,Section 9 - Getting Input and Interaction,1,1
+Arrays,"<p>Code for this section...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-10"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-10</a></p>",54,-,Section 10 - Arrays,1,1
+Define A Ruby Hash,"<p>Code for this section...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-11"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-11</a></p>",60,-,Section 11 - The Hash,1,1
+If Else Mission Impossible App,"<p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-12"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-12</a></p>",64,-,Section 12 - Mission Impossible,1,1
+The Unless Condition,"<p>Code...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-13"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-13</a></p>
+ 
+ <p>&nbsp;</p>",65,-,Section 13 - Conditions and Loops,1,1
+IRB Console,"<p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-14"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-14</a></p>",72,-,Section 14 - Ruby Has Class,1,1
+Create A File,"<p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-15"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-15</a></p>",80,-,Section 15 - Working With Files,1,1
+Rescue,"<p>Code Repo...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-16"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-16</a></p>",84,-,Section 16 - Errors,1,1
+Search Array,"<p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-17"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-17</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>system 'cls'</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>stuff_array = %w(</code></p>
+ 
+ <p><code>&nbsp; Buffalo</code></p>
+ 
+ <p><code>&nbsp; Miami</code></p>
+ 
+ <p><code>&nbsp; Steve</code></p>
+ 
+ <p><code>&nbsp; airplane</code></p>
+ 
+ <p><code>&nbsp; tuna</code></p>
+ 
+ <p><code>&nbsp; coffee</code></p>
+ 
+ <p><code>&nbsp; cup</code></p>
+ 
+ <p><code>&nbsp; pen</code></p>
+ 
+ <p><code>&nbsp; 123</code></p>
+ 
+ <p><code>&nbsp; 7</code></p>
+ 
+ <p><code>&nbsp; 99</code></p>
+ 
+ <p><code>&nbsp; hello</code></p>
+ 
+ <p><code>)</code></p>
+ 
+ <p><code>p stuff_array.grep('Miami')</code></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><code>def show</code></p>
+ 
+ <p><code>&nbsp; @user = User.find(params[:id])</code></p>
+ 
+ <p><code>end</code></p>",87,-,Section 17 - Search WIth Grep,1,1
+Gem Intro,"<p>Repo...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-18"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-18</a></p>
+ 
+ <p># <a href=""https://rubygems.org/"" target=""_blank"" rel=""noopener"">https://rubygems.org/</a></p>
+ 
+ <p># <a href=""https://github.com/jnunemaker/httparty"" target=""_blank"" rel=""noopener"">https://github.com/jnunemaker/httparty</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>Site used to grab data:</p>
+ 
+ <p># <a href=""https://udemy-api.herokuapp.com/"" target=""_blank"" rel=""noopener"">https://udemy-api.herokuapp.com/</a></p>",88,-,Section 18 - Gems,1,1
+What is the Super keyword?,"<p>Repo...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-20"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-20</a></p>",96,-,Section 20 - Ruby Gaming,1,1
+Galigoo Intro,"<p>Game Media</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/game-media"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/game-media</a></p>",100,-,Section 21 - Galigoo,1,1
+Local Variables,"<p>Git Repo for this section...</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-2-3-4"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/Steves-Ruby-Udemy-Course/tree/master/section-2-3-4</a></p>",15,-,Section 3 - Variables,1,1
+VM Setup,"<p># Cloud 9 IDE</p>
+ 
+ <p><a href=""https://c9.io/"" target=""_blank"" rel=""noopener"">https://c9.io/</a></p>
+ 
+ <p># Virtual Box</p>
+ 
+ <p><a href=""https://www.virtualbox.org/wiki/Downloads"" target=""_blank"" rel=""noopener"">https://www.virtualbox.org/wiki/Downloads</a></p>
+ 
+ <p># Link to download Ubuntu machine image</p>
+ 
+ <p><a href=""https://drive.google.com/file/d/0B0z-XC2F2egBSkQ2cFFuMk9ER1k/view?usp=sharing"" target=""_blank"" rel=""noopener"">https://drive.google.com/file/d/0B0z-XC2F2egBSkQ2cFFuMk9ER1k/view?usp=sharing</a></p>
+ 
+ <p># password for Ubuntu machine</p>
+ 
+ <p>machine password = ruby</p>
+ 
+ <p># Ruby version manager</p>
+ 
+ <p><a href=""rvm.io"" target=""_blank"" rel=""noopener"">rvm.io</a></p>
+ 
+ <p># Install Gdebi on Ubuntu command</p>
+ 
+ <p>sudo apt install gdebi</p>
+ 
+ <p># Visual Studio homepage</p>
+ 
+ <p><a href=""https://code.visualstudio.com"" target=""_blank"" rel=""noopener"">https://code.visualstudio.com</a></p>
+ 
+ <p># Ruby Gems</p>
+ 
+ <p><a href=""https://rubygems.org/"" target=""_blank"" rel=""noopener"">https://rubygems.org/</a></p>
+ 
+ <p># Ruby Gem Guide</p>
+ 
+ <p><a href=""http://guides.rubygems.org/make-your-own-gem/"" target=""_blank"" rel=""noopener"">http://guides.rubygems.org/make-your-own-gem/</a></p>
+ 
+ <p># Visual Code Studio settings</p>
+ 
+ <p><a href=""https://gist.github.com/schesnowitz/aaa23159504fc2ba659dadf8eea86fb0"" target=""_blank"" rel=""noopener"">https://gist.github.com/schesnowitz/aaa23159504fc2ba659dadf8eea86fb0</a></p>",92,-,Section 19 - Build A Gem,1,1
+Git Hub,"<p>Create an account at:&nbsp;<a href=""https://github.com/"" target=""_blank"" rel=""noopener"">https://github.com/</a></p>
+ 
+ <p>Download installer from:&nbsp;<a href=""https://git-scm.com/"" target=""_blank"" rel=""noopener"">https://git-scm.com/</a></p>
+ 
+ <p>&nbsp;</p>",4,-,Section 2 - The Set Up,1,2
+CMDER,"<p>Download (if using windows):&nbsp;<a href=""http://cmder.net/"" target=""_blank"" rel=""noopener"">http://cmder.net/</a></p>
+ 
+ <p>&nbsp;</p>",5,-,Section 2 - The Set Up,1,2
+VS Code,"<p>Download:&nbsp;<a href=""https://code.visualstudio.com/"" target=""_blank"" rel=""noopener"">https://code.visualstudio.com/</a></p>",6,-,Section 2 - The Set Up,1,2
+Clone and Commit,"<p>Repo to clone:&nbsp;<a href=""https://github.com/schesnowitz/rails-app"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-app</a>&nbsp;</p>
+ 
+ <p>New Repo created in this video can be found at:&nbsp;<a href=""https://github.com/schesnowitz/my-website"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website</a></p>",8,-,Section 2 - The Set Up,1,2
+Run Nanobox,"<p><a href=""https://nanobox.io/"" target=""_blank"" rel=""noopener"">https://nanobox.io/</a></p>
+ 
+ <p>boxfile can be found at:&nbsp;<a href=""https://github.com/schesnowitz/my-website/blob/nanobox/boxfile.yml"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website/blob/nanobox/boxfile.yml</a></p>",10,-,Section 2 - The Set Up,1,2
+Configre App With Nanobox,"<p>To copy the code used in this video it is probably best to copy from my repo as nanobox may update thier code from time to time.&nbsp; So we are all on the same page, grab all code from:</p>
+ 
+ <p>NOTE:&nbsp; Feel free to go ahead with the nanobox setup(registration) as all services we use in the course are free.&nbsp;</p>
+ 
+ <p>I have a note about this in the deploy section but there is now no need to ""scale"" your nanobox container when we deploy, feel free to use the default settings when we deploy(This will make more sense in that section).&nbsp; Please keep this in mind as to scale up will mean you need to pay $10 a month -- Again, no need to pay.&nbsp; &nbsp;</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>Base app that is cloned in the video:&nbsp;<a href=""https://github.com/schesnowitz/rails-app"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-app</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>App configured to use Nanobox:&nbsp;<a href=""https://github.com/schesnowitz/my-website/tree/nanobox"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website/tree/nanobox</a></p>
+ 
+ <p>&nbsp;</p>",9,-,Section 2 - The Set Up,1,2
+The Seven Methods,"<p>Wiki: <a href=""https://en.wikipedia.org/wiki/Create,_read,_update_and_delete"" target=""_blank"" rel=""noopener"">https://en.wikipedia.org/wiki/Create,_read,_update_and_delete</a></p>
+ 
+ <p>Git: <a href=""https://github.com/schesnowitz/my-website/tree/crud_posts"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website/tree/crud_posts</a></p>",13,-,"Section 4 - Rails CRUD (create, read, update, destroy)",1,2
+Compare Scaffold,"<p>Section Repo:&nbsp;&nbsp;<a href=""https://github.com/schesnowitz/my-website/tree/scaffold_hosts"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website/tree/scaffold_hosts</a></p>",28,-,Section 5 - Generators,1,2
+Style,"<p>Git Repo:&nbsp;<a href=""Git%20Repo: https:/github.com/schesnowitz/my-website/tree/style_and_form"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website/tree/style_and_form</a></p>
+ 
+ <p># bootstrap gem</p>
+ 
+ <p><a href=""https://rubygems.org/gems/bootstrap/"" target=""_blank"" rel=""noopener"">https://rubygems.org/gems/bootstrap/</a></p>
+ 
+ <p># bootstrap gem homepage</p>
+ 
+ <p><a href=""https://github.com/twbs/bootstrap-rubygem"" target=""_blank"" rel=""noopener"">https://github.com/twbs/bootstrap-rubygem</a></p>
+ 
+ <p># bootstrap homepage</p>
+ 
+ <p><a href=""http://getbootstrap.com"" target=""_blank"" rel=""noopener"">http://getbootstrap.com</a></p>
+ 
+ <p># simple form</p>
+ 
+ <p><a href=""https://rubygems.org/gems/simple_form/versions/3.5.0"" target=""_blank"" rel=""noopener"">https://rubygems.org/gems/simple_form/versions/3.5.0</a></p>",31,-,Section 6 - Gems and Forms,1,2
+Setting The Container,"<p>Repo:</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/my-website/tree/app_build"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/my-website/tree/app_build</a></p>",33,-,Section 7 - An App With Users,1,2
+Rolling Back,"<p>Git Repo:</p>
+ 
+ <p>Clone a branch: <a href=""https://stackoverflow.com/questions/1911109/how-to-clone-a-specific-git-branch"" target=""_blank"" rel=""noopener"">https://stackoverflow.com/questions/1911109/how-to-clone-a-specific-git-branch</a></p>
+ 
+ <p>Branch to clone: <code>git clone -b nanobox&nbsp;https://github.com/schesnowitz/my-website</code></p>
+ 
+ <p>&nbsp;</p>",10,-,Section 1 - The Set Up,1,2
+Set up Users,"<p>Git Branch (completed section 8):&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/users"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/users</a></p>
+ 
+ <p>Simple Form:&nbsp;&nbsp;<a title=""Simple Form"" href=""https://github.com/plataformatec/simple_form"" target=""_blank"" rel=""noopener"">https://github.com/plataformatec/simple_form</a></p>
+ 
+ <p>Rubygems:&nbsp;<a href=""https://rubygems.org/gems/simple_form/versions/3.5.0"" target=""_blank"" rel=""noopener"">https://rubygems.org/gems/simple_form/versions/3.5.0</a></p>
+ 
+ <p>Devise:&nbsp;<a href=""https://github.com/plataformatec/devise"" target=""_blank"" rel=""noopener"">https://github.com/plataformatec/devise</a></p>
+ 
+ <p>Rubygems:&nbsp;<a href=""https://rubygems.org/gems/devise/versions/4.4.0"" target=""_blank"" rel=""noopener"">https://rubygems.org/gems/devise/versions/4.4.0</a></p>",43,-,Section 8 - Users With Custom Fields,1,2
+Prepare The Theme,"<p>Git:&nbsp;</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>The Front End Template can be found here:</p>
+ 
+ <p><a href=""https://github.com/schesnowitz/rails-beginners-app/blob/template/template.zip"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/blob/template/template.zip</a></p>",87,-,Section 17 - Front End,1,2
+Add Administrator,"<p>Git Branch:&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/administration"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/administration</a></p>",96,-,Section 18 - Administration,1,2
+Nanobox Behind The Scenes,<p>No Github commits made during this section.</p>,11,-,Section 3 - Overview,1,2
+SetUp,"<p>Git:&nbsp;&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/comment"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/comment</a></p>",56,-,Section 10 - Recover Password,1,2
+Posts Scaffold,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/commits/comment"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/commits/comment</a>&nbsp; (see the different branches inside this section for code changes)</p>",50,-,Section 9 - Posts With Comments,1,2
+Generate A Mailer,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/commits/comment-mailer"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/commits/comment-mailer</a></p>",59,-,Section 11 - Send Comment Emails,1,2
+User Data,"<p>Git <a href=""https://github.com/schesnowitz/rails-beginners-app/commits/seeding"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/commits/seeding</a></p>",64,-,Section 12 - Seeding Data,1,2
+Fake Data,"<p><a href=""https://github.com/stympy/faker"" target=""_blank"" rel=""noopener"">https://github.com/stympy/faker</a></p>",65,-,Section 12 - Seeding Data,1,2
+Sidekiq And Redis,"<p>Git <a href=""https://github.com/schesnowitz/rails-beginners-app/tree/sidekiq"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/sidekiq</a></p>
+ 
+ <p>Redis&nbsp;<a href=""https://redis.io/"" target=""_blank"" rel=""noopener"">https://redis.io/</a></p>
+ 
+ <p>Sidekiq&nbsp;<a href=""https://github.com/mperham/sidekiq"" target=""_blank"" rel=""noopener"">https://github.com/mperham/sidekiq</a></p>
+ 
+ <p>Nanobox Redis&nbsp;<a href=""https://guides.nanobox.io/redis/create/"" target=""_blank"" rel=""noopener"">https://guides.nanobox.io/redis/create/</a></p>
+ 
+ <p>&nbsp;</p>",66,-,Section 13 - Run It In The Background,1,2
+Carrierwave,"<p>Git Repo&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/carrier"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/carrier</a></p>
+ 
+ <p>CarrierWave <a href=""https://github.com/carrierwaveuploader/carrierwave"" target=""_blank"" rel=""noopener""><span style=""font-family: Arial;""><span style=""font-size: 13.3333px;"">https://github.com/carrierwaveuploader/carrierwave</span></span></a></p>
+ 
+ <p>&nbsp;</p>",68,-,Section 14 - User Image,1,2
+Custom CSS,"<p>Git Repo&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/using-css"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/using-css</a></p>
+ 
+ <p>Themes&nbsp;<a href=""https://bootswatch.com/"" target=""_blank"" rel=""noopener"">https://bootswatch.com/</a></p>
+ 
+ <p>&nbsp;</p>",72,-,Section 15 - Free Templating,1,2
+Validations,"<p>Git&nbsp; <a href=""https://github.com/schesnowitz/rails-beginners-app/tree/potpourri"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/potpourri</a></p>
+ 
+ <p>ApiDock&nbsp;<a href=""https://apidock.com/rails/ActiveModel/Validations/ClassMethods/validates"" target=""_blank"" rel=""noopener"">https://apidock.com/rails/ActiveModel/Validations/ClassMethods/validates</a></p>
+ 
+ <p>Lorem Ipsum&nbsp;<a title=""https://www.lipsum.com/"" href=""https://www.lipsum.com/"" target=""_blank"" rel=""noopener"">https://www.lipsum.com/</a></p>
+ 
+ <p>HTML Formatter&nbsp;<a href=""https://www.freeformatter.com/html-formatter.html"" target=""_blank"" rel=""noopener"">https://www.freeformatter.com/html-formatter.html</a></p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>&nbsp;</p>",82,-,Section 16 - Potpourri,1,2
+Comment Buttons,"<p>Git <a href=""https://github.com/schesnowitz/rails-beginners-app/commits/administration"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/commits/administration</a></p>",103,-,Section 19 - User Authorization,1,2
+Theme Images,"<p>Git <a href=""https://github.com/schesnowitz/rails-beginners-app/commits/themeImage"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/commits/themeImage</a></p>",109,-,Section 21 - Theme Image,1,2
+Sign Out Flasher,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/commits/user-access"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/commits/user-access</a></p>",107,-,Section 20 - User Access,1,2
+Redirect The Admin,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/commits/content-management"">https://github.com/schesnowitz/rails-beginners-app/commits/content-management</a></p>",110,-,Section 22 - Content Management,1,2
+Action Inputs,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/action"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/action</a></p>",137,-,Section 24 - Action,1,2
+Header Inputs and Show,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/header"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/header</a></p>",142,-,Section 25 - Header,1,2
+Time and Fa Fa,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/footer"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/footer</a></p>",145,-,Section 26 - Footer,1,2
+Template Needs Administration,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/template-auth"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/template-auth</a></p>",153,-,Section 28 - Template Authorization,1,2
+Tweak,"<p><strong>Note:&nbsp; Just a couple of weeks after recording, Digital Ocean boosted the performance on all their droplets and so there is no need to ""scale up"" to the $10 version as I do in the upcoming video.&nbsp; Feel free to leave the droplet set to the $5 version and you should be good to go.</strong></p>
+ 
+ <p><strong>To get $10 free @ Digital Ocean&nbsp;<a href=""https://m.do.co/c/68fc0173ab04"" target=""_blank"" rel=""noopener"">https://m.do.co/c/68fc0173ab04</a></strong></p>
+ 
+ <p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/first_deploy"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/first_deploy</a></p>",154,-,Section 29 - Deploy,1,2
+Contact Migration,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/incoming_mail"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/incoming_mail</a></p>",160,-,Section 30 - Receive Mail,1,2
+Admin Navi,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/admin_nav_fix"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/admin_nav_fix</a></p>
+ 
+ <p>&nbsp;</p>",167,-,Section 31 - Admin Navi,1,2
+Set up,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/post_home"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/post_home</a></p>",168,-,Section 32 - Post On Home,1,2
+Hide The Module,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/portfolio_grid_prep"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/portfolio_grid_prep</a></p>",175,-,Section 33 - Portfolio Grid Prep,1,2
+Category Model,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/portfolio_grid"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/portfolio_grid</a></p>",177,-,Section 34 - Portfolio Grid,1,2
+Limit Log,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/potpourri_two_and_colors_custom"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/potpourri_two_and_colors_custom</a></p>",188,-,Section 35 - Potpourri Two,1,2
+"Migration, Control, Seed","<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/potpourri_two_and_colors_custom"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/potpourri_two_and_colors_custom</a></p>",190,-,Section 36 - Colors and Custom,1,2
+Updating Seed File,"<p><strong>Note:&nbsp; Just a couple of weeks after recording, Digital Ocean boosted the performace on all their droplets and so there is no need to ""scale up"" to the $10 version as I do in the upcoming videos.&nbsp; Feel free to leave the droplet set to the $5 version and you should be good to go.</strong></p>
+ 
+ <p><strong>To get $10 free @ Digital Ocean&nbsp;<a href=""https://m.do.co/c/68fc0173ab04"" target=""_blank"" rel=""noopener"">https://m.do.co/c/68fc0173ab04</a></strong></p>
+ 
+ <p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/second_nano_deploy"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/second_nano_deploy</a></p>",197,-,Section 38 - Deploy Part Two,1,2
+Update Using Jquery,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/jquery"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/jquery</a></p>",199,-,Section 39 - JQuery,1,2
+Setting Up,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/heroku_deploy"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/heroku_deploy</a></p>
+ 
+ <p>Heroku&nbsp;<a href=""https://www.heroku.com/"" target=""_blank"" rel=""noopener"">https://www.heroku.com/</a></p>",204,-,Section 40 - Heroku Deploy,1,2
+WYSIWYG Edit,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/deploy_with_tinymce"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/deploy_with_tinymce</a></p>
+ 
+ <p>Tiny MCE WYSIWYG&nbsp;<a href=""https://github.com/spohlenz/tinymce-rails"" target=""_blank"" rel=""noopener"">https://github.com/spohlenz/tinymce-rails</a></p>",210,-,Section 41 - Potpourri Three,1,2
+Kill The Server,"<p>To kill your rails server:</p>
+ 
+ <p style=""padding-left: 30px;"">1. Open a new terminal</p>
+ 
+ <p style=""padding-left: 30px;"">2. ""nanobox run""</p>
+ 
+ <p style=""padding-left: 30px;"">3. go inside the tmp folder and look in pids open server.pid (you may need to refresh to see a file) open file</p>
+ 
+ <p style=""padding-left: 30px;"">4. in the new nanobox terminal type <code>kill -9 xxxx</code> (xxxx = the number you see in the server.pid file)</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p><em>If that fails, stop nanobox ""nanobox stop"" and then run ""nanobox run"" to get things rolling again.</em></p>
+ 
+ <p>&nbsp;</p>",211,-,Section 42 - Course Resources,1,2
+Welcome,"<h2>Hello, and welcome to Rails For Beginners&nbsp;&nbsp;</h2>
+ 
+ <p>I have tried to make the resources&nbsp;used in the course available here.&nbsp; If I have overlooked any, please reach out to me and I will add content as needed.</p>
+ 
+ <p>If you want to join our group on Facebook&nbsp;<a href=""http://www.facebook.com/groups/1722657984689508/"" target=""_blank"" rel=""noopener"">http://www.facebook.com/groups/1722657984689508/</a></p>
+ 
+ <p>I really hope you enjoy the course and I appreciate any feedback as it helps me improve the content as things get updated.</p>
+ 
+ <p>Thanks so much for taking this course and I think you will find it helpful on your Ruby on Rails journey!</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>all the best -Steve</p>
+ 
+ <p>steve@chesnowitz.com</p>",1,-,Section 1 - Welcome,1,2
+Create The Project,"<p>&nbsp;</p>
+ 
+ <p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/action"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/action</a></p>",127,-,Section 23 - Project,1,2
+Comment Order,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/template-auth"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/template-auth</a></p>",151,-,Section 27 - Order & Time,1,2
+The Template Count,"<p>Git&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/tree/second_nano_deploy"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/tree/second_nano_deploy</a></p>",196,-,Section 37 - More Validation,1,2
+Welcome!,"<h2>Hello, and welcome to Ruby For Beginners&nbsp;&nbsp;</h2>
+ 
+ <p>I have tried to make the resources&nbsp;used in the course available here.&nbsp; If I have overlooked any, please reach out to me and I will add content as needed.</p>
+ 
+ <p>If you want to join our group on Facebook&nbsp;<a href=""http://www.facebook.com/groups/1722657984689508/"" target=""_blank"" rel=""noopener"">http://www.facebook.com/groups/1722657984689508/</a></p>
+ 
+ <p>I really hope you enjoy the course and I appreciate any feedback as it helps me improve the content as things get updated.</p>
+ 
+ <p>Thanks so much for taking this course and I think you will find it helpful on your Ruby journey!</p>
+ 
+ <p>&nbsp;</p>
+ 
+ <p>all the best -Steve</p>
+ 
+ <p>steve@chesnowitz.com</p>",1,-,Section 1 - The Set Up,1,1
+Create Base App,"<p>Gist used in the video:&nbsp;<a href=""https://gist.github.com/schesnowitz/70732a7dd1c55204b4b2e7b2ab1f0ff1"" target=""_blank"" rel=""noopener"">https://gist.github.com/schesnowitz/70732a7dd1c55204b4b2e7b2ab1f0ff1</a></p>
+ 
+ <p>Ruby:&nbsp;<a href=""https://www.ruby-lang.org/en/"" target=""_blank"" rel=""noopener"">https://www.ruby-lang.org/en/</a></p>
+ 
+ <p>IDE Used:&nbsp;&nbsp;<a href=""https://aws.amazon.com/cloud9/?origin=c9io"" target=""_blank"" rel=""noopener"">https://aws.amazon.com/cloud9/?origin=c9io</a></p>
+ 
+ <p>Postgresql commands:&nbsp;<a href=""https://gist.github.com/schesnowitz/28ad4153ec1bdef4ad666b73d35266a8"" target=""_blank"" rel=""noopener"">https://gist.github.com/schesnowitz/28ad4153ec1bdef4ad666b73d35266a8</a></p>
+ 
+ <p>Ruby Version Manager:&nbsp;<a href=""https://rvm.io/"" target=""_blank"" rel=""noopener"">https://rvm.io/</a></p>
+ 
+ <p>App created in this video:&nbsp;<a href=""https://github.com/schesnowitz/rails-app"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-app</a></p>
+ 
+ <p>&nbsp;</p>",7,-,Section 2 - The Set Up,1,2
+Configure Production,"<p>Boxfile:&nbsp;<a href=""https://github.com/schesnowitz/rails-beginners-app/blob/first_nano_deploy/boxfile.yml"" target=""_blank"" rel=""noopener"">https://github.com/schesnowitz/rails-beginners-app/blob/first_nano_deploy/boxfile.yml</a></p>",155,-,Section 29 - Deploy,1,2
+No Need To Scale,"<div class=""asset-container"" style=""box-sizing: border-box; width: 650px; height: 195px; position: relative; top: 0px; left: 0px; overflow: hidden;"" data-reactroot="""">
+ 
+ <div class=""asset-container__padding article-view"" style=""box-sizing: border-box; padding: 15px;"">
+ 
+ <div class=""w3c-default"" style=""box-sizing: border-box;"">
+ 
+ <p style=""box-sizing: border-box; margin: 0px 0px 20px; font-size: 18px;""><strong style=""box-sizing: border-box; font-weight: bold;"">Just a couple of weeks after recording, Digital Ocean boosted the performance&nbsp;on all their droplets and so there is no need to ""scale up"" to the $10 version as I do in the upcoming video.&nbsp; Feel free to leave the droplet set to the $5 version and you should be good to go.</strong></p>
+ 
+ <p style=""box-sizing: border-box; margin: 0px 0px 20px; font-size: 18px;""><strong style=""box-sizing: border-box; font-weight: bold;"">To get $10 free @ Digital Ocean&nbsp;<a style=""box-sizing: border-box; background-color: transparent; text-decoration: none; color: #007791; font-weight: 400;"" href=""https://m.do.co/c/68fc0173ab04"" target=""_blank"" rel=""noopener"">https://m.do.co/c/68fc0173ab04</a></strong></p>
+ 
+ </div>
+ 
+ </div>
+ 
+ </div>",156,-,Section 29 - Deploy,1,2

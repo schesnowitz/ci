@@ -1,0 +1,34 @@
+<!-- Portfolio Grid Section -->
+<section class="page-section">
+  <div class="container text-center wow fadeIn">
+    <h2 id='portfolio_grid_title_show'><%= @template_one.portfolio_grid_title %></h2>
+    <hr class="colored">
+    <p id='portfolio_grid_text_show'><%= @template_one.portfolio_grid_text %></p>
+    <%= bootstrap_flash %>  
+    <div class="controls mt-3">
+      <% @template_one.grid_image_categories.each do |gic| %>
+      <button type="button" class="control btn btn-secondary btn-sm mx-2 mb-4" data-mixitup-control data-filter=".<%= gic.name %>"><%= gic.name %></button>
+      <%= link_to "Delete Category", [@template_one, gic], method: :delete, data: { confirm: "This will delete the category and all related images!  This can't be undone." } %> 
+      <% end %>
+    </div>
+    <div class="portfolio-grid clearfix" id="portfolioList">
+      <% @grid_images.each do |image| %>
+      <!-- Grid Item 1 -->
+      <div class="mix <%= image.grid_image_category.name %>" href="<%= asset_url image.image_url(:grid_image) if image.image.present? %>" title="<%= image.name %> -- <%= image.description %>">
+        <div class="portfolio-wrapper">
+          <img src="<%= asset_url image.image_url(:grid_image) if image.image.present? %>" alt=""> 
+          <div class="caption">
+            <div class="caption-text">
+              <a class="text-title"><%= image.name %></a>
+              <span class="text-category"><%= image.description %>
+              </span>
+            </div>
+            <div class="caption-bg"></div>
+          </div>
+        </div>
+        <%= link_to "Delete Image", image, method: :delete, data: { confirm: "This can't be undone, are you sure?" }, class: "btn btn-outline-danger btn-sm" %>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</section>

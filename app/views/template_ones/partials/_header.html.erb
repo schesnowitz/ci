@@ -1,0 +1,28 @@
+<% if @template_one.header_use_default_image == true || !@template_one.header_image_url.present? %>
+<header class="masthead" style="background-image: url(<%= asset_url 'template_ones/header.jpg' %>);">
+<% else %>
+<header class="masthead" style="background-image: url(<%= asset_url @template_one.header_image_url(:version_1900x1267) if @template_one.header_image_url.present? %>);">
+  <% end %>
+  <div class="container h-100">
+    <div class="row h-100">
+      <div class="col-12 my-auto text-center text-white">
+        <% if @template_one.header_use_default_svg == true || !@template_one.header_svg.present? %>
+        <img class="masthead-img img-fluid mb-3" src="" alt=""> 
+        <% else %>
+        <img class="masthead-img img-fluid mb-3" src="<% asset_url @template_one.header_svg if @template_one.header_svg.present? %>" alt="">   
+        <% end %>
+        <%= bootstrap_flash %>
+        <div class="masthead-title"><%= @template_one.header_title %></div>
+        <hr class="colored">
+        <div class="masthead-subtitle"><%= @template_one.header_text %></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-down">
+    <a class="btn js-scroll-trigger" href="#action">  
+    <i class="fa fa-angle-down fa-fw"></i>
+    </a>
+  </div>
+</header>
+<%= link_to "Edit Header", edit_header_path, class: "btn btn-outline-info btn-sm pull-right" if current_user.try(:admin?) %> 
+<%= link_to "Edit Navigation", edit_navigation_path, class: "btn btn-outline-info btn-sm pull-left" if current_user.try(:admin?) %>

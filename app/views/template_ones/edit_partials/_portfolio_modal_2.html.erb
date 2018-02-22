@@ -1,0 +1,65 @@
+<!-- Example Modal 2: Corresponds with Portfolio Carousel Item 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url(<%= asset_url 'template_ones/agency/portfolio/carousel/bg-2.jpg'%>)">
+    
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 mx-auto">
+                  <h2>Project Name</h2>
+                  <hr class="colored">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <div class="device-mockup macbook portrait black">
+                    <div class="device">
+                      <div class="screen">
+
+                        <!-- Modal Mockup Option 1: Single Image (Uncomment Below to Use) -->
+                        <!-- <img src="img/agency/portfolio/carousel/screen-2a.jpg" class="img-fluid" alt=""> -->
+
+                        <!-- Modal Mockup Option 2: Carousel (Example In Use Below) -->
+                        <div class="mockup-carousel">
+                          <div class="item">
+                            <img src="<%= asset_url 'template_ones/agency/portfolio/carousel/screen-2a.jpg'%>" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="<%= asset_url 'template_ones/agency/portfolio/carousel/screen-2b.jpg'%>" class="img-fluid" alt="">
+                          </div>
+                          <div class="item">
+                            <img src="<%= asset_url 'template_ones/agency/portfolio/carousel/screen-2c.jpg'%>" class="img-fluid" alt="">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                  <ul class="list-inline item-details">
+                    <li>Client:
+                      <strong>Start Bootstrap</strong>
+                    </li>
+                    <li>Date:
+                      <strong>April 2015</strong>
+                    </li>
+                    <li>Service:
+                      <strong>Web Development</strong>
+                    </li>
+                  </ul>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fa fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>

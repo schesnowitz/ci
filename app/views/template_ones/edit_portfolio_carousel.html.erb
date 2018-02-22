@@ -1,0 +1,24 @@
+<%= render 'template_ones/edit_partials/portfolio_carousel' %> 
+<%= render 'template_ones/edit_partials/portfolio_modal_1' %>
+<%= render 'template_ones/edit_partials/portfolio_modal_2' %>
+<%= render 'template_ones/edit_partials/portfolio_modal_3' %>
+<%= render 'template_ones/edit_partials/portfolio_modal_4' %>
+<%= render 'template_ones/partials/static_assets/static_assets' %>
+<div class='container'>
+  <%= bootstrap_flash %> 
+  <br>
+  <%= link_to "Home", root_path, class: "btn btn-outline-info btn-sm" %>
+  <br><br>
+  <%= simple_form_for(@template_one) do |f| %>
+  <div class="form-inputs">
+    <%= f.input :portfolio_carousel_hide, label: "Hide this module on main page?" %> 
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit, data: {disable_with: 'One moment please...'} %> 
+    | <%= link_to "Home", root_path, class: "btn btn-default" %> 
+  </div>
+  <% end %>
+</div>
+<br>
+<%= link_to "Add Project", new_template_one_project_path(@template_one), class: 'btn btn-success' %>
+<br><br><br><br><br><br><br><br>

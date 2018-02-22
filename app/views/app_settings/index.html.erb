@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>App Settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tab name</th>
+      <th>Theme name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @app_settings.each do |app_setting| %>
+      <tr>
+        <td><%= app_setting.tab_name %></td>
+        <td><%= app_setting.theme_name %></td>
+        <td><%= link_to 'Show', app_setting %></td>
+        <td><%= link_to 'Edit', edit_app_setting_path(app_setting) %></td>
+        <td><%= link_to 'Destroy', app_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New App Setting', new_app_setting_path %>

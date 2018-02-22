@@ -1,0 +1,127 @@
+<!-- Footer -->
+<% if @template_one.footer_use_default_image? ||   
+  !@template_one.footer_image.present? %>
+<footer class="footer" style="background-image: url(<%= asset_url 'template_ones/footer.png' %>)">
+<% else %>
+<footer class="footer" style="background-image: url(<%= asset_url @template_one.footer_image_url(:footer) if @template_one.footer_image.present? %>)">
+  <% end %>  
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4 footer-contact-details">
+        <% if @template_one.footer_hide_telephone == false %>
+        <span id='hideTele'>
+          <h4>
+            <i id='footer_icon_telephone_show' class="fa fa-<%= @template_one.footer_icon_telephone %>"></i>
+            <span id='footer_telephone_title_show'>
+            <%= @template_one.footer_telephone_title %>
+            </span> 
+          </h4>
+          <p id='footer_telephone_number_show'><%= @template_one.footer_telephone_number %></p>
+        </span>
+        <% end %>
+      </div>
+      <div class="col-md-4 footer-contact-details">
+        <% if @template_one.footer_hide_address == false %>
+        <span id='hideAddress'>
+          <h4>
+            <i id='footer_icon_address_show' class="fa fa-<%= @template_one.footer_icon_address %>"></i>
+            <span id='footer_address_title_show'>
+            <%= @template_one.footer_address_title %>
+            </span> 
+          </h4>
+          <p>
+            <span id='footer_address_street_show'>
+            <%= @template_one.footer_address_street %>
+            </span> <br>
+            <span id='footer_address_city_show'>
+            <%= @template_one.footer_address_city %>
+            </span>, 
+            <span id='footer_address_state_show'>
+            <%= @template_one.footer_address_state %>
+            </span>  
+            <span id='footer_address_postal_code_show'>
+            <%= @template_one.footer_address_postal_code %>
+            </span> 
+          </p>
+        </span>
+        <% end %>
+      </div>
+      <div class="col-md-4 footer-contact-details">
+        <% if @template_one.footer_hide_email == false %>
+        <span id='hideEmail'>
+          <h4>
+            <i id='footer_icon_email_show' class="fa fa-<%= @template_one.footer_icon_email %>"></i>
+            <span id='footer_email_title_show'>
+            <%= @template_one.footer_email_title %>
+            </span> 
+          </h4>
+          <p id='footer_email_address_show'>
+            <%= mail_to @template_one.footer_email_address %>
+          </p>
+        </span>
+        <% end %>
+      </div>
+    </div>
+    <div class="row footer-social">
+      <div class="col-lg-12">
+        <ul class="list-inline">
+          <% if @template_one.footer_hide_social_1 == false %>
+          <span id='hide_social_1'>
+            <li class="list-inline-item">
+              <%= link_to "http://" + @template_one.footer_social_url_1, target: :_blank do %>
+              <i id='footer_social_icon_1_show' class="fa fa-<%= @template_one.footer_social_icon_1 %> fa-fw fa-2x"></i>
+              <% end %>
+            </li>
+          </span>
+          <% end %>
+          <% if @template_one.footer_hide_social_2 == false %>
+          <span id='hide_social_2'>
+            <li class="list-inline-item">
+              <%= link_to "http://" + @template_one.footer_social_url_2, target: :_blank do %>
+              <i id='footer_social_icon_2_show' class="fa fa-<%= @template_one.footer_social_icon_2 %>  fa-fw fa-2x"></i>
+              <% end %>
+            </li>
+          </span>
+          <% end %>
+          <% if @template_one.footer_hide_social_3 == false %>
+          <span id='hide_social_3'>
+            <li class="list-inline-item">
+              <%= link_to "http://" + @template_one.footer_social_url_3, target: :_blank do %>
+              <i id='footer_social_icon_3_show' class="fa fa-<%= @template_one.footer_social_icon_3 %>  fa-fw fa-2x"></i>
+              <% end %>
+            </li>
+          </span>
+          <% end %>
+          <% if @template_one.footer_hide_social_4 == false %>
+          <span id='hide_social_4'>
+            <li class="list-inline-item">
+              <%= link_to "http://" + @template_one.footer_social_url_4, target: :_blank do %>
+              <i id='footer_social_icon_4_show' class="fa fa-<%= @template_one.footer_social_icon_4 %>  fa-fw fa-2x"></i>
+              <% end %>
+            </li>
+          </span>
+          <% end %>
+          <% if @template_one.footer_hide_social_5 == false %>
+          <span id='hide_social_5'>
+            <li class="list-inline-item">
+              <%= link_to "http://" + @template_one.footer_social_url_5, target: :_blank do %>
+              <i id='footer_social_icon_5_show' class="fa fa-<%= @template_one.footer_social_icon_5 %>  fa-fw fa-2x"></i>
+              <% end %>
+            </li>
+          </span>
+          <% end %>
+          <% if @template_one.footer_hide_social_6 == false %>
+          <span id='hide_social_6'>
+            <li class="list-inline-item">
+              <%= link_to "http://" + @template_one.footer_social_url_6, target: :_blank do %>
+              <i id='footer_social_icon_6_show' class="fa fa-<%= @template_one.footer_social_icon_6 %>  fa-fw fa-2x"></i>
+              <% end %>
+            </li>
+          </span>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; <%= Time.now.strftime('%Y') %> <%= @app_setting.app_title %></p>
+  </div>
+</footer>

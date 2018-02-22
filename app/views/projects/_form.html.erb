@@ -1,0 +1,32 @@
+<%= simple_form_for [@template_one, @project] do |f| %> 
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :button_text %>
+    <label>Main Image</label>
+    <%= f.input :image_1, as: :file, label: false %> 
+    <label>Side Image</label>
+    <%= f.input :image_2, as: :file, label: false %>
+    <%= f.input :template_one_id %>
+<h3>Modal Section</h3>
+    <%= f.input :modal_name %>
+    <%= f.input :modal_description %>
+    <%= f.input :modal_client %>
+    <%= f.input :modal_date %>
+    <%= f.input :modal_service %>
+      <label>Modal Main</label>
+    <%= f.input :modal_image_1, as: :file, label: false %>
+      <label>Modal Item 1</label>
+    <%= f.input :modal_image_2, as: :file, label: false %>
+      <label>Modal Item 2</label>
+    <%= f.input :modal_image_3, as: :file, label: false %>
+      <label>Modal Item 3</label>
+    <%= f.input :modal_image_4, as: :file, label: false %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
