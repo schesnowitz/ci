@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Url</th>
+      <th>String 1</th>
+      <th>String 2</th>
+      <th>String 3</th>
+      <th>String 4</th>
+      <th>String 5</th>
+
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pages.each do |page| %>
+      <tr>
+        <td><%= page.title %></td>
+        <td><%= page.url %></td>
+        <td><%= page.string_1 %></td>
+        <td><%= page.string_2 %></td>
+        <td><%= page.string_3 %></td>
+        <td><%= page.string_4 %></td>
+        <td><%= page.string_5 %></td>
+
+        <td><%= page.template_one_id %></td>
+        <td><%= link_to 'Show', template_one_page_path(@template_one, page) %></td>
+        <td><%= link_to 'Edit', edit_template_one_page_path(@template_one, page) %></td>
+        <td><%= link_to 'Destroy', template_one_page_path(@template_one, page), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Page', new_template_one_page_path %>
+<br><br><br><br>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_02_17_215604) do
+ActiveRecord::Schema.define(version: 2018_02_22_121057) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -96,6 +96,29 @@ ActiveRecord::Schema.define(version: 2018_02_17_215604) do
     t.string "url"
     t.string "name"
     t.boolean "open_in_new_tab"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pages", force: :cascade do |t|
+    t.string "title"
+    t.string "url"
+    t.string "string_1"
+    t.string "string_2"
+    t.string "string_3"
+    t.string "string_4"
+    t.string "string_5"
+    t.string "string_6"
+    t.string "string_7"
+    t.string "string_8"
+    t.string "string_9"
+    t.string "string_10"
+    t.string "string_11"
+    t.string "string_12"
+    t.string "string_13"
+    t.string "string_14"
+    t.string "string_15"
+    t.integer "template_one_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

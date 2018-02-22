@@ -59,6 +59,7 @@
           <div class="dropdown-menu" aria-labelledby="download">
             <%= link_to "Backend", courses_path, class: 'dropdown-item' %>  
             <%= link_to "Administration", rails_admin_path, class: 'dropdown-item', target: :_blank %>  
+            <%= link_to 'text', new_template_one_page_path(@template_one), class: 'dropdown-item' %>
             <%= link_to "Edit Account", edit_user_registration_path, class: 'dropdown-item' %> 
             <div class="dropdown-divider"></div>
             <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: 'dropdown-item' %>  

@@ -129,12 +129,7 @@ class TemplateOnesController < ApplicationController
       @template_one = TemplateOne.find(1)
     end
 
-    def not_admin_user
-      if !current_user.try(:admin?)
-        flash[:danger] = "This resource is not available."
-        redirect_to root_path
-      end
-    end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def template_one_params

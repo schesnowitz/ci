@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+
   resources :links
 
   resources :courses do
@@ -23,7 +24,7 @@ Rails.application.routes.draw do
   resources :template_ones do
     resources :projects
     resources :grid_image_categories, only: [:create, :new, :destroy]
-
+    resources :pages
   end
 
 

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  url: MyString
+  string_1: MyString
+  string_2: MyString
+  string_3: MyString
+  string_4: MyString
+  string_5: MyString
+  string_6: MyString
+  string_7: MyString
+  string_8: MyString
+  string_9: MyString
+  string_10: MyString
+  string_11: MyString
+  string_12: MyString
+  string_13: MyString
+  string_14: MyString
+  string_15: MyString
+  template_one_id: 1
+
+two:
+  title: MyString
+  url: MyString
+  string_1: MyString
+  string_2: MyString
+  string_3: MyString
+  string_4: MyString
+  string_5: MyString
+  string_6: MyString
+  string_7: MyString
+  string_8: MyString
+  string_9: MyString
+  string_10: MyString
+  string_11: MyString
+  string_12: MyString
+  string_13: MyString
+  string_14: MyString
+  string_15: MyString
+  template_one_id: 1
