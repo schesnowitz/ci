@@ -1,6 +1,8 @@
 class PagesController < ApplicationController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   before_action :set_template_one
+  before_action :not_administrator, except: [:show]
+  layout 'template_ones'
   # GET /pages
   # GET /pages.json
   def index
@@ -10,6 +12,8 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    @links = Link.all
+    @incoming_contact = IncomingContact.new 
   end
 
   # GET /pages/new
@@ -42,7 +46,7 @@ class PagesController < ApplicationController
   def update
     respond_to do |format|
       if @page.update(page_params)
-        format.html { redirect_to @page, notice: 'Page was successfully updated.' }
+        format.html { redirect_to template_one_page_path(@template_one, @page), notice: 'Page was successfully updated.' }
         format.json { render :show, status: :ok, location: @page }
       else
         format.html { render :edit }
@@ -73,6 +77,6 @@ class PagesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def page_params
-      params.require(:page).permit(:title, :url, :string_1, :string_2, :string_3, :string_4, :string_5, :string_6, :string_7, :string_8, :string_9, :string_10, :string_11, :string_12, :string_13, :string_14, :string_15, :template_one_id)
+      params.require(:page).permit(:title, :url, :string_1, :string_2, :string_3, :string_4, :string_5, :string_6, :string_7, :string_8, :string_9, :string_10, :string_11, :string_12, :string_13, :string_14, :string_15, :template_one_id, :show_as_solo_link, :show_in_dropdown, :hide)
     end
 end

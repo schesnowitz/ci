@@ -12,9 +12,18 @@ user = User.create!(
   puts user.inspect
   
   
+  user = User.create!(
+  email: 'noadmin@chesnowitz.com',
+  password: 'password',
+  password_confirmation: 'password',
+  first_name: 'Steve',
+  last_name: 'Chesnowitz',
+  username: 'Chesnowitz',
+  admin: false
+  )
+  puts user.inspect
   
-  
-  
+
   
   
   course = Course.create!(
@@ -90,7 +99,7 @@ user = User.create!(
     action_image: '',
     portfolio_header_title: 'portfolio_header_title',
     portfolio_header_text: 'portfolio_header_text',
-    navigation_title: "CHESNOWITZ",
+    navigation_title: "Communications",
     contact_title: 'contact_title',
     contact_text: 'contact_text',
     newsletter_title: 'newsletter_title',
@@ -126,6 +135,30 @@ user = User.create!(
   )
   puts t1.inspect
   
+  page = Page.create!(
+    title: 'Reputation Management', 
+    url: 'url', 
+    string_1: 'A company or brands social and search engine profile is essentially the same thing as a version of its credit score. Online reputation management focuses on creating and/or improving the quantity, visibility, and relevance of positive online content for a company. Online reputation management is often abbreviated as "ORM" or "SERM" which stands for "Search Engine Reputation Management", the terms are often used interchangeably.  The objective of a Reputation Management campaign is to improve how an online profile - be it a person, product, service, political entity, or company - is seen online. Reputation Management services use SEO, PR, content design and management, search engine marketing, review management, negotiation, legal methods, and psychology to achieve the goals of their clients.', 
+    string_2: 'A Valuable Asset', 
+    string_3: 'For business owners, your online reputation is your most valuable asset as search results will impact the decisions of potential customers. Good online reputation management is not only about reacting well to what people say about you, or your company but also about how and when to react. We can help create/restore and protect the reputation you’ve worked hard to build.', 
+    string_4: 'What\'s Involved?', 
+    string_5: 'Online reputation services are used to improve Yelp, Google, Facebook, Twitter, and almost any other page that collects data about your brand. We can improve search results, and to remove or suppress any negative online content. The practice of ORM often includes a number of different disciplines and frameworks. The end result of each is usually the same - We improve how a brand is seen online.', 
+    string_6: 'Guaranteed Results', 
+    string_7: 'We are one of the very few online Reputation Management firms that guarantees results -- If your you do not see an improvement in the first 90 days, or if you are just not happy with the service: You get your money back.', 
+    string_8: 'string_8', 
+    string_9: 'string_9', 
+    string_10: 'string_10', 
+    string_11: 'string_11', 
+    string_12: 'string_12', 
+    string_13: 'string_13', 
+    string_14: 'string_14', 
+    string_15: 'string_15', 
+    template_one_id: 1, 
+    show_as_solo_link: false, 
+    show_in_dropdown: true, 
+    hide: false
+  )
+  
   # project = Project.create!(
   #   # Carousel project section
   #   name: "Header Text", 
@@ -152,10 +185,10 @@ user = User.create!(
   
   app_setting = AppSetting.find_or_initialize_by(id: 1)
   app_setting.theme_name = 'solar'
-  app_setting.tab_name = 'CI'
+  app_setting.tab_name = 'CI Communications'
   app_setting.navbar_color = 'dark'
   app_setting.front_end_color = 'blue' 
-  app_setting.app_title = 'Chesnowitz Interactive' 
+  app_setting.app_title = 'Communications' 
   app_setting.app_email_1 = 'steve@chesnowitz.com'
   app_setting.app_email_2 = 'example2@example.com'
   app_setting.app_email_title_1 = "Form Submission Chesnowitz"
@@ -226,7 +259,7 @@ user = User.create!(
   t1.action_image = ''
   t1.portfolio_header_title = 'portfolio_header_title'
   t1.portfolio_header_text = 'portfolio_header_text'
-  t1.navigation_title = "Chesnowitz Interactive"
+  t1.navigation_title = "Ci Communications"
   t1.contact_title = 'Get In Touch'
   t1.contact_text = 'Let\'s talk'
   t1.newsletter_title = 'newsletter_title'
@@ -254,20 +287,18 @@ user = User.create!(
   t1.footer_hide_social_3 = false
   t1.footer_social_icon_3 = "github"
   t1.footer_social_url_3 = "github.com/schesnowitz"
-  t1.footer_hide_social_4 = true
-  t1.footer_social_icon_4 = "fa fa-code"
-  t1.footer_social_url_4 = "url_4"
+  t1.footer_hide_social_4 = false
+  t1.footer_social_icon_4 = "facebook-square"
+  t1.footer_social_url_4 = "facebook.com/cicommunications"
   t1.footer_social_icon_5 = "fa fa-code"
   t1.footer_hide_social_5 = true
   t1.footer_social_url_5 = "url_5"
   t1.footer_social_icon_6 = "fa fa-code"
   t1.footer_hide_social_6 = true
   t1.footer_social_url_6 = "url_6"
-  t1.portfolio_grid_title = 'portfolio_grid_title'
-  t1.portfolio_grid_text = 'portfolio_grid_text'
+  t1.portfolio_grid_title = 'TAKE A PEEK'
+  t1.portfolio_grid_text = 'At just some of our work.'
   
   t1.save
   puts t1.inspect
-  
-  
   

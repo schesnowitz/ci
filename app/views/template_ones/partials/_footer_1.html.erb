@@ -1,0 +1,92 @@
+<footer class="footer" style="background-image: url(<%= asset_url 'template_ones/reputation-footer.png' %>)">
+ 
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-4 footer-contact-details">
+        <% if @template_one.footer_hide_telephone == false %>
+        <h4>
+          <i class="fa fa-<%= @template_one.footer_icon_telephone %>"></i>
+          <%= @template_one.footer_telephone_title %>
+        </h4>
+        <p><%= @template_one.footer_telephone_number %></p>
+        <% end %>
+      </div>
+      <div class="col-md-4 footer-contact-details">
+        <% if @template_one.footer_hide_address == false %>
+        <h4>
+          <i class="fa fa-<%= @template_one.footer_icon_address %>"></i>
+          <%= @template_one.footer_address_title %>
+        </h4>
+        <p><%= @template_one.footer_address_street %><br>
+          <%= @template_one.footer_address_city %>
+          <%= @template_one.footer_address_state %> 
+          <%= @template_one.footer_address_postal_code %>
+        </p>
+        <% end %>
+      </div>
+      <div class="col-md-4 footer-contact-details">
+        <% if @template_one.footer_hide_email == false %>
+        <h4>
+          <i class="fa fa-<%= @template_one.footer_icon_email %>"></i>
+          <%= @template_one.footer_email_title %>
+        </h4>
+        <p>
+          <%= mail_to @template_one.footer_email_address %>
+        </p>
+        <% end %>
+      </div>
+    </div>
+    <div class="row footer-social">
+      <div class="col-lg-12">
+        <ul class="list-inline">
+          <% if @template_one.footer_hide_social_1 == false %>
+          <li class="list-inline-item">
+            <%= link_to "http://" + @template_one.footer_social_url_1, target: :_blank do %>
+            <i class="fa fa-<%= @template_one.footer_social_icon_1 %> fa-fw fa-2x"></i>
+            <% end %>
+          </li>
+          <% end %>
+          <% if @template_one.footer_hide_social_2 == false %>
+          <li class="list-inline-item">
+            <%= link_to "http://" + @template_one.footer_social_url_2, target: :_blank do %>
+            <i class="fa fa-<%= @template_one.footer_social_icon_2 %>  fa-fw fa-2x"></i>
+            <% end %>
+          </li>
+          <% end %>
+          <% if @template_one.footer_hide_social_3 == false %>
+          <li class="list-inline-item">
+            <%= link_to "http://" + @template_one.footer_social_url_3, target: :_blank do %>
+            <i class="fa fa-<%= @template_one.footer_social_icon_3 %>  fa-fw fa-2x"></i>
+            <% end %>
+          </li>
+          <% end %>
+          <% if @template_one.footer_hide_social_4 == false %>
+          <li class="list-inline-item">
+            <%= link_to "http://" + @template_one.footer_social_url_4, target: :_blank do %>
+            <i class="fa fa-<%= @template_one.footer_social_icon_4 %>  fa-fw fa-2x"></i>
+            <% end %>
+          </li>
+          <% end %>
+          <% if @template_one.footer_hide_social_5 == false %>
+          <li class="list-inline-item">
+            <%= link_to "http://" + @template_one.footer_social_url_5, target: :_blank do %>
+            <i class="fa fa-<%= @template_one.footer_social_icon_5 %>  fa-fw fa-2x"></i>
+            <% end %>
+          </li>
+          <% end %>
+          <% if @template_one.footer_hide_social_6 == false %>
+          <li class="list-inline-item">
+            <%= link_to "http://" + @template_one.footer_social_url_6, target: :_blank do %>
+            <i class="fa fa-<%= @template_one.footer_social_icon_6 %>  fa-fw fa-2x"></i>
+            <% end %>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div> 
+    <p class="copyright">&copy; <%= Time.now.strftime('%Y') %> <%= @app_setting.app_title %></p>
+  </div>
+</footer>
+
+
+

@@ -2,3 +2,12 @@
   padding-right: 8px;
   padding-bottom: 6px; 
 }
+
+.jumbotron { 
+  background: url('joan.jpg');
+  color: rgb(220, 220, 231);
+  padding-top: 150px;
+}
+
+
+ 

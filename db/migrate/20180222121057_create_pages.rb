@@ -19,6 +19,9 @@ class CreatePages < ActiveRecord::Migration[5.2]
       t.string :string_14
       t.string :string_15
       t.integer :template_one_id
+      t.boolean :hide, default: false
+      t.boolean :show_as_solo_link, default: false
+      t.boolean :show_in_dropdown, default: false
 
       t.timestamps
     end

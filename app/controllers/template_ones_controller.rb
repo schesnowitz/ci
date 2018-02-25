@@ -25,6 +25,7 @@ class TemplateOnesController < ApplicationController
     @grid_image_categories = GridImageCategory.all
     @grid_images = GridImage.all
     @links = Link.all
+    @pages = @template_one.pages
   end
 
   # GET /template_ones/new

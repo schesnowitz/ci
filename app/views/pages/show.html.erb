@@ -1,95 +1,44 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @page.title %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @page.url %>
-</p>
-
-<p>
-  <strong>String 1:</strong>
-  <%= @page.string_1 %>
-</p>
-
-<p>
-  <strong>String 2:</strong>
-  <%= @page.string_2 %>
-</p>
-
-<p>
-  <strong>String 3:</strong>
-  <%= @page.string_3 %>
-</p>
-
-<p>
-  <strong>String 4:</strong>
-  <%= @page.string_4 %>
-</p>
-
-<p>
-  <strong>String 5:</strong>
-  <%= @page.string_5 %>
-</p>
-
-<p>
-  <strong>String 6:</strong>
-  <%= @page.string_6 %>
-</p>
-
-<p>
-  <strong>String 7:</strong>
-  <%= @page.string_7 %>
-</p>
-
-<p>
-  <strong>String 8:</strong>
-  <%= @page.string_8 %>
-</p>
-
-<p>
-  <strong>String 9:</strong>
-  <%= @page.string_9 %>
-</p>
-
-<p>
-  <strong>String 10:</strong>
-  <%= @page.string_10 %>
-</p>
-
-<p>
-  <strong>String 11:</strong>
-  <%= @page.string_11 %>
-</p>
-
-<p>
-  <strong>String 12:</strong>
-  <%= @page.string_12 %>
-</p>
-
-<p>
-  <strong>String 13:</strong>
-  <%= @page.string_13 %>
-</p>
-
-<p>
-  <strong>String 14:</strong>
-  <%= @page.string_14 %>
-</p>
-
-<p>
-  <strong>String 15:</strong>
-  <%= @page.string_15 %>
-</p>
-
-<p>
-  <strong>Template one:</strong>
-  <%= @page.template_one_id %>
-</p>
-
+<%= render 'template_ones/partials/navigation_1' %>
+<div class="">
+  <div class="">
+    <div class="">
+      <main role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-3"><%= @page.title %></h1>
+            <p><%= @page.string_1 %></p>
+          </div>
+        </div>
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-4">
+              <h3><%= @page.string_2 %></h3>
+              <p><%= @page.string_3 %></p>
+            </div>
+            <div class="col-md-4">
+              <h3><%= @page.string_4 %></h3>
+              <p><%= @page.string_5 %> </p>
+            </div>
+            <div class="col-md-4">
+              <h3><%= @page.string_6 %></h3>
+              <p><%= @page.string_7 %></p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <!-- /container -->
+      </main>
+    </div>
+  </div>
+</div>
+<div class="scroll-down">
+</div>
+<% if current_user.try(:admin?) %>
 <%= link_to 'Edit', edit_template_one_page_path(@template_one, @page) %> |
 <%= link_to 'Back', template_one_pages_path %> 
-<br><br><br><br>
+<% end %>
+<%= render 'template_ones/partials/contact_1' %>
+<%= render 'template_ones/partials/footer_1' %> 
+<%= render 'template_ones/partials/static_assets/static_assets' %>

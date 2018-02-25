@@ -119,6 +119,9 @@ ActiveRecord::Schema.define(version: 2018_02_22_121057) do
     t.string "string_14"
     t.string "string_15"
     t.integer "template_one_id"
+    t.boolean "hide", default: false
+    t.boolean "show_as_solo_link", default: false
+    t.boolean "show_in_dropdown", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

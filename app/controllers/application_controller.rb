@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   
   def not_administrator
     if !current_user.try(:admin?)
-      flash[:danger] = "This does not exist or is reserved for administrators."
+      flash[:danger] = "This resource does not exist or is reserved for administrators."
       redirect_back(fallback_location: root_path)
     end
   end
