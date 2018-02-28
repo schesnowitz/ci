@@ -22,7 +22,7 @@ gem 'simple_form'
 gem 'devise'
 gem 'stripe'
 gem 'kaminari'
-gem 'sidekiq', '~> 5.0', '>= 5.0.5'
+# gem 'sidekiq', '~> 5.0', '>= 5.0.5'
 gem 'sidekiq-cron', '~> 0.6.3'
 gem 'httparty', '~> 0.15.6'
 gem 'bootstrap-sass-extras'
@@ -33,7 +33,6 @@ gem "fog"
 gem 'tinymce-rails'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'mini_magick', '~> 4.8'
-
 
 
 
